@@ -1,0 +1,5 @@
+[package]
+name = "coinnect"
+version = "0.2.1"
+license = "MIT"
+authors = ["Hugues Gaillard <
