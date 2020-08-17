@@ -4,4 +4,8 @@ version = "0.2.1"
 license = "MIT"
 authors = ["Hugues Gaillard <hugues.gaillard@me.com>", "Alejandro Inestal"]
 description = """
-A Rust library to connect to various crypto-currencies exc
+A Rust library to connect to various crypto-currencies exchanges.
+"""
+documentation = "https://docs.rs/coinnect/"
+homepage = "https://github.com/hugues31/coinnect"
+reposito
