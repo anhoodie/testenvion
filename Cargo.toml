@@ -8,4 +8,6 @@ A Rust library to connect to various crypto-currencies exchanges.
 """
 documentation = "https://docs.rs/coinnect/"
 homepage = "https://github.com/hugues31/coinnect"
-reposito
+repository = "https://github.com/hugues31/coinnect"
+keywords = [ "bitcoin", "trading", "poloniex", "kraken", "bitstamp" ]
+readme = "README
