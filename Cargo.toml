@@ -10,4 +10,12 @@ documentation = "https://docs.rs/coinnect/"
 homepage = "https://github.com/hugues31/coinnect"
 repository = "https://github.com/hugues31/coinnect"
 keywords = [ "bitcoin", "trading", "poloniex", "kraken", "bitstamp" ]
-readme = "README
+readme = "README.md"
+
+[features]
+default = []
+bitstamp_private_tests = []
+kraken_private_tests = []
+poloniex_private_tests = []
+
+[
