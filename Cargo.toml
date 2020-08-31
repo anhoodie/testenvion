@@ -18,4 +18,12 @@ bitstamp_private_tests = []
 kraken_private_tests = []
 poloniex_private_tests = []
 
-[
+[[example]]
+name = "simple"
+path = "examples/simple.rs"
+
+[[example]]
+name = "kraken_trading"
+path = "examples/kraken_trading.rs"
+
+[[
