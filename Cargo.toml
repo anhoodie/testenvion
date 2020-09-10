@@ -33,4 +33,9 @@ path = "examples/generic_api.rs"
 [dependencies]
 hyper = "0.10.6"
 serde_json = "0.9"
-time = "0.1.3
+time = "0.1.36"
+rust-crypto = "0.2"
+rustc-serialize = "0.3"
+hyper-native-tls = "0.2.2"
+lazy_static = "0.2"
+bidir-map = "0.3.2"
