@@ -18,4 +18,6 @@ held responsible for the library malfunction, which can lead to a loss of money.
 
 *The project is licensed under the terms of the MIT License.*
 
-### Exchanges 
+### Exchanges support:
+| Exchange | Raw API supported | Generic API supported | Note |
+|:--------:|:-----------------:|:---------------------
