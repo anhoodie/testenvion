@@ -12,4 +12,6 @@ All methods consume HTTPS api. The purpose of this crate is not to stream data
 (you should use websocket/FIX in that case).
 
 
-**WARNING:**  This library is highly experimental at the momen
+**WARNING:**  This library is highly experimental at the moment. Please do not
+invest what you can't afford to loose. This is a personal project, I can not be
+held responsible for the library 
