@@ -20,4 +20,6 @@ held responsible for the library malfunction, which can lead to a loss of money.
 
 ### Exchanges support:
 | Exchange | Raw API supported | Generic API supported | Note |
-|:--------:|:-----------------:|:---------------------
+|:--------:|:-----------------:|:---------------------:|:----:|
+| Bitstamp | X | X | Not every method are implemented for now. Generic API supports only Ticker for now. |
+| Kraken  
