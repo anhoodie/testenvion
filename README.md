@@ -25,4 +25,8 @@ held responsible for the library malfunction, which can lead to a loss of money.
 | Kraken   | X | X | Generic API supports only Ticker for now. |
 | Poloniex | X | X | Generic API supports only Ticker for now. |
 
-Feel f
+Feel free to make a PR to add support to your favorite exchange ;)
+
+### Documentation
+
+- [Master](https://docs.rs/coi
