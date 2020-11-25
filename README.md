@@ -29,4 +29,18 @@ Feel free to make a PR to add support to your favorite exchange ;)
 
 ### Documentation
 
-- [Master](https://docs.rs/coi
+- [Master](https://docs.rs/coinnect/)
+
+
+## Usage
+
+Add this to your `Cargo.toml`:
+
+```toml
+[dependencies]
+coinnect = "0.2"
+```
+
+and this to your crate root:
+
+```rust
