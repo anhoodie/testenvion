@@ -44,3 +44,7 @@ coinnect = "0.2"
 and this to your crate root:
 
 ```rust
+extern crate coinnect;
+```
+
+For optional parameters, most methods require an empty str (`"
