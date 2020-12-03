@@ -47,4 +47,7 @@ and this to your crate root:
 extern crate coinnect;
 ```
 
-For optional parameters, most methods require an empty str (`"
+For optional parameters, most methods require an empty str (`""`) if you don't
+want to specify them.
+
+Since 0.2, you have access to a generic API to communicate across excha
