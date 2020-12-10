@@ -52,4 +52,9 @@ want to specify them.
 
 Since 0.2, you have access to a generic API to communicate across exchanges in
 the same way. Note that this functionality is under active development, changes
-constantly and not every Exchange 
+constantly and not every Exchange is supported for now.
+For more info, look at ExchangeApi trait doc.
+
+## Example
+
+The example below shows you how to 
