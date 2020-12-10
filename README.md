@@ -50,4 +50,6 @@ extern crate coinnect;
 For optional parameters, most methods require an empty str (`""`) if you don't
 want to specify them.
 
-Since 0.2, you have access to a generic API to communicate across excha
+Since 0.2, you have access to a generic API to communicate across exchanges in
+the same way. Note that this functionality is under active development, changes
+constantly and not every Exchange 
