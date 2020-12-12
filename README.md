@@ -57,4 +57,12 @@ For more info, look at ExchangeApi trait doc.
 
 ## Example
 
-The example below shows you how to 
+The example below shows you how to connect to Poloniex
+
+```rust
+extern crate coinnect;
+
+use coinnect::poloniex::PoloniexApi;
+
+fn main() {
+    // We create a Polon
