@@ -65,4 +65,6 @@ extern crate coinnect;
 use coinnect::poloniex::PoloniexApi;
 
 fn main() {
-    // We create a Polon
+    // We create a PoloniexApi by providing API key/secret
+    // You can give an empty str if you only use public methods
+    let mut 
