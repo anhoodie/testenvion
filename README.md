@@ -70,4 +70,7 @@ fn main() {
     let mut my_api = PoloniexApi::new("api_key", "api_secret");
 
     // Let's look at the ticker!
-    let list_coi
+    let list_coins = my_api.return_ticker().unwrap();
+
+    for coin in list_coins {
+        // please visit Poloniex API documentation to kno
