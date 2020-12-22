@@ -73,4 +73,7 @@ fn main() {
     let list_coins = my_api.return_ticker().unwrap();
 
     for coin in list_coins {
-        // please visit Poloniex API documentation to kno
+        // please visit Poloniex API documentation to know how the data is returned
+        // or look at the coinnect documentation
+        let name = coin.0;
+        let price = coi
