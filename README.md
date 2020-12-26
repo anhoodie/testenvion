@@ -76,4 +76,6 @@ fn main() {
         // please visit Poloniex API documentation to know how the data is returned
         // or look at the coinnect documentation
         let name = coin.0;
-        let price = coi
+        let price = coin.1.as_object().unwrap().get("last").unwrap().as_str().unwrap();
+
+        println!("Coin {} has price : {}", nam
