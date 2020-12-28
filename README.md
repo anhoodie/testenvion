@@ -78,4 +78,13 @@ fn main() {
         let name = coin.0;
         let price = coin.1.as_object().unwrap().get("last").unwrap().as_str().unwrap();
 
-        println!("Coin {} has price : {}", nam
+        println!("Coin {} has price : {}", name, price);
+    }
+}
+
+```
+
+For more examples, please see [examples](examples/).
+
+## Testing
+You can run the tests suite with `cargo test` 
