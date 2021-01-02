@@ -87,4 +87,6 @@ fn main() {
 For more examples, please see [examples](examples/).
 
 ## Testing
-You can run the tests suite with `cargo test` 
+You can run the tests suite with `cargo test` for testing non private data
+requests (this will ignore tests related to private requests).
+You can use `car
