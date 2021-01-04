@@ -89,4 +89,6 @@ For more examples, please see [examples](examples/).
 ## Testing
 You can run the tests suite with `cargo test` for testing non private data
 requests (this will ignore tests related to private requests).
-You can use `car
+You can use `cargo test --features "bitstamp_private_tests"` to run private
+tests related to bitstamp exchange for example.
+Before runn
