@@ -91,4 +91,8 @@ You can run the tests suite with `cargo test` for testing non private data
 requests (this will ignore tests related to private requests).
 You can use `cargo test --features "bitstamp_private_tests"` to run private
 tests related to bitstamp exchange for example.
-Before runn
+Before running private tests, make sure you have a `keys_real.json` file at the
+root with the following structure :
+```json
+{
+    "account
