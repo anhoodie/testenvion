@@ -95,4 +95,9 @@ Before running private tests, make sure you have a `keys_real.json` file at the
 root with the following structure :
 ```json
 {
-    "account
+    "account_kraken": {
+        "api_key"   : "123456789ABCDEF",
+        "api_secret": "ABC&EF?abcdef"
+    },
+    "account_poloniex": {
+        "api
