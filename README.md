@@ -100,4 +100,8 @@ root with the following structure :
         "api_secret": "ABC&EF?abcdef"
     },
     "account_poloniex": {
-        "api
+        "api_key"   : "XYXY-XYXY-XYXY-XY",
+        "api_secret": "A0A0B1B1C2C2"
+    },
+    "account_bitstamp": {
+        "api_key"  
