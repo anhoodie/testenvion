@@ -110,4 +110,5 @@ root with the following structure :
     }
 }
 ```
-You 
+You must insert your real API keys, otherwise private tests may failed. No
+action is performed if you run the te
