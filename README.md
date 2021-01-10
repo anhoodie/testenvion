@@ -114,3 +114,5 @@ You must insert your real API keys, otherwise private tests may failed. No
 action is performed if you run the tests : no test will open position, or
 withdraw, etc.
 Tests only check for correct authentication method and correct parsing.
+You can examine the [tests](tests) folder just to be sure and look at the
+[Cargo.toml](Cargo.toml) file for a comple
