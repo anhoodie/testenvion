@@ -111,4 +111,6 @@ root with the following structure :
 }
 ```
 You must insert your real API keys, otherwise private tests may failed. No
-action is performed if you run the te
+action is performed if you run the tests : no test will open position, or
+withdraw, etc.
+Tests only check for correct authentication method and correct parsing.
