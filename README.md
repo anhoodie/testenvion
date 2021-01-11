@@ -115,4 +115,9 @@ action is performed if you run the tests : no test will open position, or
 withdraw, etc.
 Tests only check for correct authentication method and correct parsing.
 You can examine the [tests](tests) folder just to be sure and look at the
-[Cargo.toml](Cargo.toml) file for a comple
+[Cargo.toml](Cargo.toml) file for a complete list of features.
+
+
+## Contribution
+
+Your contribution is highly appreciated. Do not hesitate to open an is
