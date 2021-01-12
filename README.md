@@ -125,4 +125,6 @@ pull request. Note that any contribution submitted for inclusion in the project
 will be licensed according to the terms given in [LICENSE](LICENSE).
 
 ## Disclaimer
-This SOFTWARE PRODUCT is provided by THE PROVIDER "as is" and "w
+This SOFTWARE PRODUCT is provided by THE PROVIDER "as is" and "with all faults."
+THE PROVIDER makes no representations or warranties of any kind concerning the
+safety, suitabili
