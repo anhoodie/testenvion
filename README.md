@@ -122,4 +122,7 @@ You can examine the [tests](tests) folder just to be sure and look at the
 
 Your contribution is highly appreciated. Do not hesitate to open an issue or a
 pull request. Note that any contribution submitted for inclusion in the project
-will be licensed accor
+will be licensed according to the terms given in [LICENSE](LICENSE).
+
+## Disclaimer
+This SOFTWARE PRODUCT is provided by THE PROVIDER "as is" and "w
