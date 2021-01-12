@@ -120,4 +120,6 @@ You can examine the [tests](tests) folder just to be sure and look at the
 
 ## Contribution
 
-Your contribution is highly appreciated. Do not hesitate to open an is
+Your contribution is highly appreciated. Do not hesitate to open an issue or a
+pull request. Note that any contribution submitted for inclusion in the project
+will be licensed accor
