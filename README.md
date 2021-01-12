@@ -127,4 +127,5 @@ will be licensed according to the terms given in [LICENSE](LICENSE).
 ## Disclaimer
 This SOFTWARE PRODUCT is provided by THE PROVIDER "as is" and "with all faults."
 THE PROVIDER makes no representations or warranties of any kind concerning the
-safety, suitabili
+safety, suitability, lack of viruses, inaccuracies, typographical errors, or
+other harmful components of this SOFTWARE PRODUCT. There are inherent
