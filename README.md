@@ -130,4 +130,5 @@ THE PROVIDER makes no representations or warranties of any kind concerning the
 safety, suitability, lack of viruses, inaccuracies, typographical errors, or
 other harmful components of this SOFTWARE PRODUCT. There are inherent dangers
 in the use of any software, and you are solely responsible for determining
-whether this SOFTWARE PRODUCT is co
+whether this SOFTWARE PRODUCT is compatible with your equipment and other
+software installed on your equipment. You are also solely responsible for 
