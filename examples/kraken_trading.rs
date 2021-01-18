@@ -98,3 +98,5 @@ fn main() {
                                       "", // expiretm
                                       "", // userref
                                       ""); // validate
+    // In a real case example, you should check if any error occurs.
+}
