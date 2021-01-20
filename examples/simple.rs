@@ -15,4 +15,7 @@ fn main() {
     for coin in list_coins {
         // please visit Poloniex API documentation to know how the data is returned
         // or look at the coinnect documentation
- 
+        let name = coin.0;
+        let price = coin.1.as_object().unwrap().get("last").unwrap().as_str().unwrap();
+
+        pri
