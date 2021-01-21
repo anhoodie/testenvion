@@ -19,4 +19,6 @@ use poloniex::api::PoloniexApi;
 pub struct Coinnect;
 
 impl Coinnect {
-   
+    /// Create a new CoinnectApi by providing an API key & API secret
+    pub fn new(exchange: Exchange,
+ 
