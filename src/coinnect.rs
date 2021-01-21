@@ -7,4 +7,9 @@ use std::path::PathBuf;
 use serde_json::value::Map;
 use serde_json::value::Value;
 
-use error::Error
+use error::Error;
+use types::Ticker;
+use exchange::{Exchange, ExchangeApi};
+use pair::Pair;
+use bitstamp::api::BitstampApi;
+u
