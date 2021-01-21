@@ -12,4 +12,11 @@ use types::Ticker;
 use exchange::{Exchange, ExchangeApi};
 use pair::Pair;
 use bitstamp::api::BitstampApi;
-u
+use kraken::api::KrakenApi;
+use poloniex::api::PoloniexApi;
+
+#[derive(Debug)]
+pub struct Coinnect;
+
+impl Coinnect {
+   
