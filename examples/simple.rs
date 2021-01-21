@@ -18,4 +18,6 @@ fn main() {
         let name = coin.0;
         let price = coin.1.as_object().unwrap().get("last").unwrap().as_str().unwrap();
 
-        pri
+        println!("Coin {} has price : {}", name, price);
+    }
+}
