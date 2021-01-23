@@ -21,4 +21,7 @@ pub struct Coinnect;
 impl Coinnect {
     /// Create a new CoinnectApi by providing an API key & API secret
     pub fn new(exchange: Exchange,
- 
+               api_key: &str,
+               api_secret: &str,
+               customer_id: Option<&str>)
+     
