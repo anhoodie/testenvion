@@ -32,4 +32,8 @@ impl Coinnect {
                 params.insert("api_secret", api_secret);
                 if customer_id.is_some() {
                     params.insert("customer_id", customer_id.unwrap());
-    
+                }
+                Box::new(BitstampApi::new(&params))
+            }
+
+            Exchange::Kraken => 
