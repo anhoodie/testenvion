@@ -24,4 +24,9 @@ impl Coinnect {
                api_key: &str,
                api_secret: &str,
                customer_id: Option<&str>)
-     
+               -> Box<ExchangeApi> {
+        match exchange {
+            Exchange::Bitstamp => {
+                let mut params = HashMap::new();
+                params.insert("api_key", api_key);
+                params.insert("api_secret", api_se
