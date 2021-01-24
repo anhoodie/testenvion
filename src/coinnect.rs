@@ -29,4 +29,7 @@ impl Coinnect {
             Exchange::Bitstamp => {
                 let mut params = HashMap::new();
                 params.insert("api_key", api_key);
-                params.insert("api_secret", api_se
+                params.insert("api_secret", api_secret);
+                if customer_id.is_some() {
+                    params.insert("customer_id", customer_id.unwrap());
+    
