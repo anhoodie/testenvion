@@ -36,4 +36,6 @@ impl Coinnect {
                 Box::new(BitstampApi::new(&params))
             }
 
-            Exchange::Kraken => 
+            Exchange::Kraken => Box::new(KrakenApi::new(api_key, api_secret)),
+
+            Exchange::Poloniex => Box::new(PoloniexApi::new(api_key, api
