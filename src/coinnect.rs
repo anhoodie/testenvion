@@ -38,4 +38,8 @@ impl Coinnect {
 
             Exchange::Kraken => Box::new(KrakenApi::new(api_key, api_secret)),
 
-            Exchange::Poloniex => Box::new(PoloniexApi::new(api_key, api
+            Exchange::Poloniex => Box::new(PoloniexApi::new(api_key, api_secret)),
+        }
+    }
+
+    /// Create a new CoinnectApi from a json configuration file. This file must fol
