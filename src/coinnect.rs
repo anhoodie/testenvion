@@ -46,4 +46,5 @@ impl Coinnect {
     /// structure:
     ///
     /// For this example, you could use load your Bitstamp account with
-    /// `new_from_fil
+    /// `new_from_file(Exchange::Bitstamp, "account_bitstamp", Path::new("/keys.json"))`
+    pub fn new_from_file(exchange: Exchange, config_name: &str, path:
