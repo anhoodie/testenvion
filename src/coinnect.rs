@@ -60,4 +60,6 @@ impl Coinnect {
 #[derive(Debug)]
 struct UnimplementedApi;
 
-impl ExchangeAp
+impl ExchangeApi for UnimplementedApi {
+    fn ticker(&mut self, _pair: Pair) -> Result<Ticker, Error> {
+        unimplemented!()
