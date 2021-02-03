@@ -51,4 +51,13 @@ impl Coinnect {
         match exchange {
             Exchange::Bitstamp => Box::new(BitstampApi::new_from_file(config_name, path)),
             Exchange::Kraken => Box::new(UnimplementedApi),
-            Exchang
+            Exchange::Poloniex => Box::new(UnimplementedApi),
+        }
+    }
+}
+
+
+#[derive(Debug)]
+struct UnimplementedApi;
+
+impl ExchangeAp
