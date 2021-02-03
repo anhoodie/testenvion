@@ -42,4 +42,8 @@ impl Coinnect {
         }
     }
 
-    /// Create a new CoinnectApi from a json configuration file. This file must fol
+    /// Create a new CoinnectApi from a json configuration file. This file must follow this
+    /// structure:
+    ///
+    /// For this example, you could use load your Bitstamp account with
+    /// `new_from_fil
