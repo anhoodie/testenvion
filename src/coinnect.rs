@@ -62,4 +62,9 @@ struct UnimplementedApi;
 
 impl ExchangeApi for UnimplementedApi {
     fn ticker(&mut self, _pair: Pair) -> Result<Ticker, Error> {
-        unimplemented!()
+        unimplemented!();
+    }
+    fn return_trade_history(&mut self, _: Pair) -> Option<Map<String, Value>> {
+        unimplemented!();
+    }
+    fn retur
