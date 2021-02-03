@@ -49,4 +49,6 @@ impl Coinnect {
     /// `new_from_file(Exchange::Bitstamp, "account_bitstamp", Path::new("/keys.json"))`
     pub fn new_from_file(exchange: Exchange, config_name: &str, path: PathBuf) -> Box<ExchangeApi> {
         match exchange {
-            Exchange::Bitstamp => Box::new(Bitstam
+            Exchange::Bitstamp => Box::new(BitstampApi::new_from_file(config_name, path)),
+            Exchange::Kraken => Box::new(UnimplementedApi),
+            Exchang
