@@ -2,4 +2,12 @@
 //! Error type represents all possible errors that can occur when dealing
 //! with the generic or any dedicated-exchange API
 
-use std::erro
+use std::error;
+use std::fmt;
+
+#[derive(Debug)]
+pub enum Error {
+    ServiceUnavailable,
+    BadParse,
+    InvalidLogin,
+    Inval
