@@ -21,4 +21,6 @@ impl error::Error for Error {
     fn description(&self) -> &str {
         match *self {
             Error::ServiceUnavailable => "Host could not be reached.",
-            Error::BadParse => "The response could not be
+            Error::BadParse => "The response could not be parsed.",
+            Error::InvalidLogin => "Wrong API key or secret.",
+            Error::InvalidArguments => "Arguments pas
