@@ -10,4 +10,8 @@ pub enum Error {
     ServiceUnavailable,
     BadParse,
     InvalidLogin,
-    Inval
+    InvalidArguments,
+    RateLimitExceeded,
+    PairUnsupported,
+    ExchangeSpecificError(String),
+    UndefinedError,
