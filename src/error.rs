@@ -15,3 +15,9 @@ pub enum Error {
     PairUnsupported,
     ExchangeSpecificError(String),
     UndefinedError,
+}
+
+impl error::Error for Error {
+    fn description(&self) -> &str {
+        match *self {
+            Error::ServiceUn
