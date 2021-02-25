@@ -23,4 +23,6 @@ impl error::Error for Error {
             Error::ServiceUnavailable => "Host could not be reached.",
             Error::BadParse => "The response could not be parsed.",
             Error::InvalidLogin => "Wrong API key or secret.",
-            Error::InvalidArguments => "Arguments pas
+            Error::InvalidArguments => "Arguments passed do not conform to the protocol.",
+            Error::RateLimitExceeded => "API call rate limit exceeded.",
+       
