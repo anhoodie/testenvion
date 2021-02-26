@@ -25,4 +25,6 @@ impl error::Error for Error {
             Error::InvalidLogin => "Wrong API key or secret.",
             Error::InvalidArguments => "Arguments passed do not conform to the protocol.",
             Error::RateLimitExceeded => "API call rate limit exceeded.",
-       
+            Error::PairUnsupported => "This pair is not supported.",
+            Error::ExchangeSpecificError(ref s) => s,
+            Error::Undef
