@@ -21,4 +21,6 @@ pub trait ExchangeApi: Debug {
     /// Return a Ticker for the Pair specified.
     fn ticker(&mut self, pair: Pair) -> Result<Ticker, Error>;
 
-    fn return_order_book(&mut self, pair: Pair) -> 
+    fn return_order_book(&mut self, pair: Pair) -> Option<Map<String, Value>>;
+    fn return_trade_history(&mut self, pair: Pair) -> Option<Map<String, Value>>;
+    fn 
