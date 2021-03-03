@@ -37,3 +37,5 @@ impl fmt::Display for Error {
         match *self {
             _ => error::Error::description(self).fmt(f),
         }
+    }
+}
