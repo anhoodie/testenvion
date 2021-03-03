@@ -11,4 +11,11 @@ use types::Ticker;
 
 #[derive(Debug)]
 #[derive(PartialEq)]
-pub enum Excha
+pub enum Exchange {
+    Bitstamp,
+    Kraken,
+    Poloniex,
+}
+
+pub trait ExchangeApi: Debug {
+    /// Return a Ticker for the 
