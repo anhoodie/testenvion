@@ -18,4 +18,7 @@ pub enum Exchange {
 }
 
 pub trait ExchangeApi: Debug {
-    /// Return a Ticker for the 
+    /// Return a Ticker for the Pair specified.
+    fn ticker(&mut self, pair: Pair) -> Result<Ticker, Error>;
+
+    fn return_order_book(&mut self, pair: Pair) -> 
