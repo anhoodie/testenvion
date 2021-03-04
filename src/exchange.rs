@@ -24,4 +24,5 @@ pub trait ExchangeApi: Debug {
     fn return_order_book(&mut self, pair: Pair) -> Option<Map<String, Value>>;
     fn return_trade_history(&mut self, pair: Pair) -> Option<Map<String, Value>>;
     fn return_balances(&mut self, pair: Pair) -> Option<Map<String, Value>>;
-    // fn balances(&mut self, pair: Option<Asset>) -> Res
+    // fn balances(&mut self, pair: Option<Asset>) -> Result<Vec<Asset, Volume>, Error>;
+}
