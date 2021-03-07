@@ -6,4 +6,9 @@ use crypto::hmac::Hmac;
 use crypto::mac::Mac;
 use crypto::sha2::{Sha256, Sha512};
 
-use hyper_native_tls::Na
+use hyper_native_tls::NativeTlsClient;
+use hyper::Client;
+use hyper::header;
+use hyper::net::HttpsConnector;
+
+use rustc_serialize::base64
