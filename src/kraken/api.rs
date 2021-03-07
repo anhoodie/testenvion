@@ -11,4 +11,10 @@ use hyper::Client;
 use hyper::header;
 use hyper::net::HttpsConnector;
 
-use rustc_serialize::base64
+use rustc_serialize::base64::{STANDARD, ToBase64, FromBase64};
+
+use serde_json;
+use serde_json::Value;
+use serde_json::value::Map;
+
+us
