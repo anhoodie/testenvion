@@ -22,4 +22,15 @@ use std::io::Read;
 use std::thread;
 use std::time::Duration;
 use std::path::PathBuf;
-use std::fs
+use std::fs::File;
+use std::str;
+use std::iter::repeat;
+
+use error;
+use helpers;
+
+use kraken::utils;
+
+header! {
+    #[doc(hidden)]
+    (KeyHeader, "API
