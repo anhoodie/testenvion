@@ -33,4 +33,12 @@ use kraken::utils;
 
 header! {
     #[doc(hidden)]
-    (KeyHeader, "API
+    (KeyHeader, "API-Key") => [String]
+}
+
+header! {
+    #[doc(hidden)]
+    (SignHeader, "API-Sign") => [String]
+}
+
+#[derive(Debug)]
