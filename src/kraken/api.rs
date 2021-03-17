@@ -42,3 +42,7 @@ header! {
 }
 
 #[derive(Debug)]
+pub struct KrakenApi {
+    last_request: i64, // unix timestamp in ms, to avoid ban
+    api_key: String,
+    api_s
