@@ -66,4 +66,9 @@ impl KrakenApi {
 
     /// Create a new KrakenApi from a json configuration file. This file must follow this structure:
     ///
-    /// `
+    /// ```ignore
+    /// {
+    ///     "account_kraken": {
+    ///         "exchange"  : "kraken",
+    ///         "api_key"   : "123456789ABCDEF",
+    /
