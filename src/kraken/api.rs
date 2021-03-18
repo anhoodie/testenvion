@@ -45,4 +45,10 @@ header! {
 pub struct KrakenApi {
     last_request: i64, // unix timestamp in ms, to avoid ban
     api_key: String,
-    api_s
+    api_secret: String,
+    http_client: Client,
+}
+
+
+impl KrakenApi {
+    /// Create a new KrakenApi by providing an API key & API se
