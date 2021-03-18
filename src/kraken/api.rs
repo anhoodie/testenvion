@@ -62,3 +62,8 @@ impl KrakenApi {
             api_secret: api_secret.to_string(),
             http_client: Client::with_connector(connector),
         }
+    }
+
+    /// Create a new KrakenApi from a json configuration file. This file must follow this structure:
+    ///
+    /// `
