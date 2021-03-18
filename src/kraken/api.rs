@@ -58,4 +58,7 @@ impl KrakenApi {
 
         KrakenApi {
             last_request: 0,
-            api_key: api_key.
+            api_key: api_key.to_string(),
+            api_secret: api_secret.to_string(),
+            http_client: Client::with_connector(connector),
+        }
