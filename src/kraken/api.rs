@@ -74,4 +74,7 @@ impl KrakenApi {
     ///         "api_secret": "ABC&EF?abcdef"
     ///     },
     ///     "account_poloniex": {
-    ///         "exc
+    ///         "exchange"  : "poloniex",
+    ///         "api_key"   : "XYXY-XYXY-XYXY-XY",
+    ///         "api_secret": "A0A0B1B1C2C2"
+    //
