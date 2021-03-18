@@ -77,4 +77,8 @@ impl KrakenApi {
     ///         "exchange"  : "poloniex",
     ///         "api_key"   : "XYXY-XYXY-XYXY-XY",
     ///         "api_secret": "A0A0B1B1C2C2"
-    //
+    ///     }
+    /// }
+    /// ```
+    /// For this example, you could use load your Kraken account with
+    /// `new_from_file("account_k
