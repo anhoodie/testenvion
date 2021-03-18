@@ -54,4 +54,8 @@ impl KrakenApi {
     /// Create a new KrakenApi by providing an API key & API secret
     pub fn new(api_key: &str, api_secret: &str) -> KrakenApi {
         let ssl = NativeTlsClient::new().unwrap();
-   
+        let connector = HttpsConnector::new(ssl);
+
+        KrakenApi {
+            last_request: 0,
+            api_key: api_key.
