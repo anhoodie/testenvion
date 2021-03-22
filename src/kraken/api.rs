@@ -81,4 +81,6 @@ impl KrakenApi {
     /// }
     /// ```
     /// For this example, you could use load your Kraken account with
-    /// `new_from_file("account_k
+    /// `new_from_file("account_kraken", Path::new("/keys.json"))`
+    pub fn new_from_file(config_name: &str, path: PathBuf) -> KrakenApi {
+        let
