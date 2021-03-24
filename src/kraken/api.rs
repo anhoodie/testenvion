@@ -85,4 +85,7 @@ impl KrakenApi {
     pub fn new_from_file(config_name: &str, path: PathBuf) -> KrakenApi {
         let mut f = File::open(&path).unwrap();
         let mut buffer = String::new();
-        f.read_to_string(&mut buffer).unw
+        f.read_to_string(&mut buffer).unwrap();
+
+        let data: Value = serde_json::from_str(&buffer).unwrap();
+        let json_obj = data.as_object().unwrap
