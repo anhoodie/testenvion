@@ -90,4 +90,7 @@ impl KrakenApi {
         let data: Value = serde_json::from_str(&buffer).unwrap();
         let json_obj = data.as_object().unwrap().get(config_name).unwrap();
         let api_key = json_obj.get("api_key").unwrap().as_str().unwrap();
-        let api_secret =
+        let api_secret = json_obj.get("api_secret").unwrap().as_str().unwrap();
+
+        KrakenApi::new(api_key, api_secret)
+   
