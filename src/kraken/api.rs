@@ -93,4 +93,8 @@ impl KrakenApi {
         let api_secret = json_obj.get("api_secret").unwrap().as_str().unwrap();
 
         KrakenApi::new(api_key, api_secret)
-   
+    }
+
+    fn block_or_continue(&self) {
+        let threshold = 2000; // 1 request/2sec
+        let delay = 
