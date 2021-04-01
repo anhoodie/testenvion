@@ -107,4 +107,6 @@ impl KrakenApi {
     fn public_query(&mut self,
                     method: &str,
                     params: &mut HashMap<&str, &str>)
-              
+                    -> Result<Map<String, Value>, error::Error> {
+        helpers::strip_empties(params);
+        let url = "https://api.kraken.co
