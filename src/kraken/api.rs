@@ -105,4 +105,6 @@ impl KrakenApi {
     }
 
     fn public_query(&mut self,
- 
+                    method: &str,
+                    params: &mut HashMap<&str, &str>)
+              
