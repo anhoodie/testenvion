@@ -99,4 +99,10 @@ impl KrakenApi {
         let threshold = 2000; // 1 request/2sec
         let delay = helpers::get_unix_timestamp_ms() - self.last_request;
         if delay < threshold {
-            let duration_ms =
+            let duration_ms = Duration::from_millis(delay as u64);
+            thread::sleep(duration_ms);
+        }
+    }
+
+    fn public_query(&mut self,
+ 
