@@ -112,4 +112,7 @@ impl KrakenApi {
         let url = "https://api.kraken.com/0/public/".to_string() + method + "?" +
                   &helpers::url_encode_hashmap(&params);
 
-        self.block_or_
+        self.block_or_continue();
+        let mut response = match self.http_client.get(&url).send() {
+            Ok(response) => response,
+       
