@@ -109,4 +109,7 @@ impl KrakenApi {
                     params: &mut HashMap<&str, &str>)
                     -> Result<Map<String, Value>, error::Error> {
         helpers::strip_empties(params);
-        let url = "https://api.kraken.co
+        let url = "https://api.kraken.com/0/public/".to_string() + method + "?" +
+                  &helpers::url_encode_hashmap(&params);
+
+        self.block_or_
