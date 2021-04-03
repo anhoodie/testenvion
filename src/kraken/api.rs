@@ -115,4 +115,6 @@ impl KrakenApi {
         self.block_or_continue();
         let mut response = match self.http_client.get(&url).send() {
             Ok(response) => response,
-       
+            Err(_) => return Err(error::Error::ServiceUnavailable),
+        };
+        self.last_request = helpers::get_unix_
