@@ -125,4 +125,6 @@ impl KrakenApi {
 
     fn private_query(&mut self,
                      method: &str,
-                     mut params: &mu
+                     mut params: &mut HashMap<&str, &str>)
+                     -> Result<Map<String, Value>, error::Error> {
+        let url = "https://ap
