@@ -117,4 +117,8 @@ impl KrakenApi {
             Ok(response) => response,
             Err(_) => return Err(error::Error::ServiceUnavailable),
         };
-        self.last_request = helpers::get_unix_
+        self.last_request = helpers::get_unix_timestamp_ms();
+        let mut buffer = String::new();
+        response.read_to_string(&mut buffer).unwrap();
+        return utils::deserialize_json(buffer);
+  
