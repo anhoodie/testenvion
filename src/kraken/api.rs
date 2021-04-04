@@ -121,4 +121,8 @@ impl KrakenApi {
         let mut buffer = String::new();
         response.read_to_string(&mut buffer).unwrap();
         return utils::deserialize_json(buffer);
-  
+    }
+
+    fn private_query(&mut self,
+                     method: &str,
+                     mut params: &mu
