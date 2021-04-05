@@ -127,4 +127,8 @@ impl KrakenApi {
                      method: &str,
                      mut params: &mut HashMap<&str, &str>)
                      -> Result<Map<String, Value>, error::Error> {
-        let url = "https://ap
+        let url = "https://api.kraken.com/0/private/".to_string() + method;
+
+        let urlpath = "/0/private/".to_string() + method;
+
+        let nonce
