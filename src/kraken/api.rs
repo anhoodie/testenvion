@@ -131,4 +131,7 @@ impl KrakenApi {
 
         let urlpath = "/0/private/".to_string() + method;
 
-        let nonce
+        let nonce = helpers::get_unix_timestamp_ms().to_string();
+        helpers::strip_empties(&mut params);
+
+        let mut pa
