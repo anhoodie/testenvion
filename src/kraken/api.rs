@@ -134,4 +134,7 @@ impl KrakenApi {
         let nonce = helpers::get_unix_timestamp_ms().to_string();
         helpers::strip_empties(&mut params);
 
-        let mut pa
+        let mut params = params.clone(); // TODO: Remove .clone()
+        params.insert("nonce", &nonce);
+
+        let postdata = helpers::url_encode_hashm
