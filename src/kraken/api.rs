@@ -137,4 +137,8 @@ impl KrakenApi {
         let mut params = params.clone(); // TODO: Remove .clone()
         params.insert("nonce", &nonce);
 
-        let postdata = helpers::url_encode_hashm
+        let postdata = helpers::url_encode_hashmap(&params);
+
+        let signature = self.create_signature(urlpath, &postdata, &nonce);
+
+        let mut custom_header = he
