@@ -141,4 +141,8 @@ impl KrakenApi {
 
         let signature = self.create_signature(urlpath, &postdata, &nonce);
 
-        let mut custom_header = he
+        let mut custom_header = header::Headers::new();
+        custom_header.set(KeyHeader(self.api_key.clone()));
+        custom_header.set(SignHeader(signature));
+
+  
