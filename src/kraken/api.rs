@@ -145,4 +145,7 @@ impl KrakenApi {
         custom_header.set(KeyHeader(self.api_key.clone()));
         custom_header.set(SignHeader(signature));
 
-  
+        let mut res = match self.http_client
+            .post(&url)
+            .body(&postdata)
+            .headers(custom
