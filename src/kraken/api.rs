@@ -148,4 +148,7 @@ impl KrakenApi {
         let mut res = match self.http_client
             .post(&url)
             .body(&postdata)
-            .headers(custom
+            .headers(custom_header)
+            .send() {
+            Ok(res) => res,
+            Err(_) => return Err(error::Error::ServiceUnavailable),
