@@ -152,3 +152,8 @@ impl KrakenApi {
             .send() {
             Ok(res) => res,
             Err(_) => return Err(error::Error::ServiceUnavailable),
+        };
+
+        let mut buffer = String::new();
+        res.read_to_string(&mut buffer).unwrap();
+        return utils::dese
