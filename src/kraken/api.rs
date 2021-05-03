@@ -156,4 +156,7 @@ impl KrakenApi {
 
         let mut buffer = String::new();
         res.read_to_string(&mut buffer).unwrap();
-        return utils::dese
+        return utils::deserialize_json(buffer);
+    }
+
+    fn create_signature(&self, urlpath: String, postdata: &str, nonce: &str) -> Strin
