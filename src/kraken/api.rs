@@ -163,4 +163,6 @@ impl KrakenApi {
         let message_presha256 = nonce.to_string() + postdata;
 
         let mut sha256 = Sha256::new();
-        sha
+        sha256.input_str(&message_presha256);
+        let mut buffer: Vec<u8> = repeat(0).take((sha256.output_bits() + 7) / 8).collect();
+     
