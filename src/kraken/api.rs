@@ -159,4 +159,8 @@ impl KrakenApi {
         return utils::deserialize_json(buffer);
     }
 
-    fn create_signature(&self, urlpath: String, postdata: &str, nonce: &str) -> Strin
+    fn create_signature(&self, urlpath: String, postdata: &str, nonce: &str) -> String {
+        let message_presha256 = nonce.to_string() + postdata;
+
+        let mut sha256 = Sha256::new();
+        sha
