@@ -168,4 +168,8 @@ impl KrakenApi {
         sha256.result(&mut buffer);
 
         let mut concatenated = urlpath.as_bytes().to_vec();
-        for elem
+        for elem in buffer {
+            concatenated.push(elem);
+        }
+
+        let hmac_key = self.api_secret.from_base64().un
