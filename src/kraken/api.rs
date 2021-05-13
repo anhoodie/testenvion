@@ -172,4 +172,7 @@ impl KrakenApi {
             concatenated.push(elem);
         }
 
-        let hmac_key = self.api_secret.from_base64().un
+        let hmac_key = self.api_secret.from_base64().unwrap();
+        let mut hmac = Hmac::new(Sha512::new(), &hmac_key);
+        hmac.input(&concatenated);
+        
