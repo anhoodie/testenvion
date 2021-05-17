@@ -175,4 +175,10 @@ impl KrakenApi {
         let hmac_key = self.api_secret.from_base64().unwrap();
         let mut hmac = Hmac::new(Sha512::new(), &hmac_key);
         hmac.input(&concatenated);
-        
+        hmac.result().code().to_base64(STANDARD)
+    }
+
+    /// Result: Server's time
+    ///
+    /// ```ignore
+    /// u
