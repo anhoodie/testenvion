@@ -181,4 +181,7 @@ impl KrakenApi {
     /// Result: Server's time
     ///
     /// ```ignore
-    /// u
+    /// unixtime =  as unix timestamp
+    /// rfc1123 = as RFC 1123 time format
+    /// ```
+    /// Note: This is to aid in approximating th
