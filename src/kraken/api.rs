@@ -184,4 +184,5 @@ impl KrakenApi {
     /// unixtime =  as unix timestamp
     /// rfc1123 = as RFC 1123 time format
     /// ```
-    /// Note: This is to aid in approximating th
+    /// Note: This is to aid in approximating the skew time between the server and client.
+    pub fn get_server_time(&mut self) -> Result<Map<String, Value>, error::Error> {
