@@ -186,3 +186,10 @@ impl KrakenApi {
     /// ```
     /// Note: This is to aid in approximating the skew time between the server and client.
     pub fn get_server_time(&mut self) -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        self.public_query("Time", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// 
