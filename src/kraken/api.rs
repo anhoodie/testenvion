@@ -192,4 +192,7 @@ impl KrakenApi {
 
     /// Input:
     ///
-    /// 
+    /// ```ignore
+    /// info = info to retrieve (optional):
+    ///     info = all info (default)
+    /// aclass = asset class (
