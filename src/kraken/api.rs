@@ -195,4 +195,6 @@ impl KrakenApi {
     /// ```ignore
     /// info = info to retrieve (optional):
     ///     info = all info (default)
-    /// aclass = asset class (
+    /// aclass = asset class (optional):
+    ///     currency (default)
+    /// asset = comma delimited list of assets to get info on (optional. 
