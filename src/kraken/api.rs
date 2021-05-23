@@ -197,4 +197,9 @@ impl KrakenApi {
     ///     info = all info (default)
     /// aclass = asset class (optional):
     ///     currency (default)
-    /// asset = comma delimited list of assets to get info on (optional. 
+    /// asset = comma delimited list of assets to get info on (optional.  default = all for
+    /// given asset class)
+    /// ```
+    /// Result: array of asset names and their info:
+    ///
+    /// 
