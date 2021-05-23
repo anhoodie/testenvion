@@ -202,4 +202,8 @@ impl KrakenApi {
     /// ```
     /// Result: array of asset names and their info:
     ///
-    /// 
+    /// ```ignore
+    /// <asset_name> = asset name
+    /// altname = alternate name
+    /// aclass = asset class
+    /// decimals = sc
