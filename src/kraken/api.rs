@@ -206,4 +206,6 @@ impl KrakenApi {
     /// <asset_name> = asset name
     /// altname = alternate name
     /// aclass = asset class
-    /// decimals = sc
+    /// decimals = scaling decimal places for record keeping
+    /// display_decimals = scaling decimal places for output display
+    /// ``
