@@ -211,4 +211,7 @@ impl KrakenApi {
     /// ```
     pub fn get_asset_info(&mut self,
                           info: &str,
-                          aclass: &
+                          aclass: &str,
+                          asset: &str)
+                          -> Result<Map<String, Value>, error::Error> {
+        let m
