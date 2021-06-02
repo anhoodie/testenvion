@@ -208,4 +208,7 @@ impl KrakenApi {
     /// aclass = asset class
     /// decimals = scaling decimal places for record keeping
     /// display_decimals = scaling decimal places for output display
-    /// ``
+    /// ```
+    pub fn get_asset_info(&mut self,
+                          info: &str,
+                          aclass: &
