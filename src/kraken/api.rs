@@ -227,3 +227,6 @@ impl KrakenApi {
     /// info = info to retrieve (optional):
     ///     info = all info (default)
     ///     leverage = leverage info
+    ///     fees = fees schedule
+    ///     margin = margin info
+    /// pair = comma delimited list of asset pairs to get info on (optional
