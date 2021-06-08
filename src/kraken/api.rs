@@ -217,4 +217,11 @@ impl KrakenApi {
         let mut params = HashMap::new();
         params.insert("info", info);
         params.insert("aclass", aclass);
-        params.insert("asset"
+        params.insert("asset", asset);
+        self.public_query("Assets", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+   
