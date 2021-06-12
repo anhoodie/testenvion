@@ -235,4 +235,6 @@ impl KrakenApi {
     /// Result: array of pair names and their info
     ///
     /// ```ignore
-  
+    /// <pair_name> = pair name
+    ///     altname = alternate pair name
+    ///     aclass_base = asset class of base co
