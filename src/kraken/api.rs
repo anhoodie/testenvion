@@ -237,4 +237,6 @@ impl KrakenApi {
     /// ```ignore
     /// <pair_name> = pair name
     ///     altname = alternate pair name
-    ///     aclass_base = asset class of base co
+    ///     aclass_base = asset class of base component
+    ///     base = asset id of base component
+    ///     aclass_quote = asset class of quote compon
