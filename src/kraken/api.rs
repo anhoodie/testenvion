@@ -239,4 +239,7 @@ impl KrakenApi {
     ///     altname = alternate pair name
     ///     aclass_base = asset class of base component
     ///     base = asset id of base component
-    ///     aclass_quote = asset class of quote compon
+    ///     aclass_quote = asset class of quote component
+    ///     quote = asset id of quote component
+    ///     lot = volume lot size
+    ///     pair_decimals = scaling
