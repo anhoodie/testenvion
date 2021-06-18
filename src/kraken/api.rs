@@ -242,4 +242,6 @@ impl KrakenApi {
     ///     aclass_quote = asset class of quote component
     ///     quote = asset id of quote component
     ///     lot = volume lot size
-    ///     pair_decimals = scaling
+    ///     pair_decimals = scaling decimal places for pair
+    ///     lot_decimals = scaling decimal places for volume
+    ///     lot_multipl
