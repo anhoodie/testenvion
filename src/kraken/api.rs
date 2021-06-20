@@ -244,4 +244,5 @@ impl KrakenApi {
     ///     lot = volume lot size
     ///     pair_decimals = scaling decimal places for pair
     ///     lot_decimals = scaling decimal places for volume
-    ///     lot_multipl
+    ///     lot_multiplier = amount to multiply lot volume by to get currency volume
+    ///     leverage_buy = array of leverage amounts ava
