@@ -248,4 +248,7 @@ impl KrakenApi {
     ///     leverage_buy = array of leverage amounts available when buying
     ///     leverage_sell = array of leverage amounts available when selling
     ///     fees = fee schedule array in [volume, percent fee] tuples
-    ///     fees_maker = maker fee schedule array in [volume
+    ///     fees_maker = maker fee schedule array in [volume, percent fee] tuples (if on
+    ///     maker/taker)
+    ///     fee_volume_currency = volume discount currency
+ 
