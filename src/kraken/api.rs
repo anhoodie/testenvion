@@ -254,4 +254,6 @@ impl KrakenApi {
     ///     margin_call = margin call level
     ///     margin_stop = stop-out/liquidation margin level
     /// ```
-    
+    pub fn get_tradable_asset_pairs(&mut self,
+                                    info: &str,
+                  
