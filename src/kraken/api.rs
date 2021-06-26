@@ -256,4 +256,6 @@ impl KrakenApi {
     /// ```
     pub fn get_tradable_asset_pairs(&mut self,
                                     info: &str,
-                  
+                                    pair: &str)
+                                    -> Result<Map<String, Value>, error::Error> {
+        let
