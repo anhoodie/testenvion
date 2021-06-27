@@ -261,4 +261,10 @@ impl KrakenApi {
         let mut params = HashMap::new();
         params.insert("info", info);
         params.insert("pair", pair);
-        self.pu
+        self.public_query("AssetPairs", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// pair = comma delimi
