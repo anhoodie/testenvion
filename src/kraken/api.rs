@@ -258,4 +258,7 @@ impl KrakenApi {
                                     info: &str,
                                     pair: &str)
                                     -> Result<Map<String, Value>, error::Error> {
-        let
+        let mut params = HashMap::new();
+        params.insert("info", info);
+        params.insert("pair", pair);
+        self.pu
