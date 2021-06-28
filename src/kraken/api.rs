@@ -270,4 +270,8 @@ impl KrakenApi {
     /// pair = comma delimited list of asset pairs to get info on
     /// ```
     ///
-    /// Result: array of pair names and t
+    /// Result: array of pair names and their ticker info
+    ///
+    /// ```ignore
+    /// <pair_name> = pair name
+    /// a = ask array(<price>, <whole lot 
