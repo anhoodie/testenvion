@@ -267,4 +267,7 @@ impl KrakenApi {
     /// Input:
     ///
     /// ```ignore
-    /// pair = comma delimi
+    /// pair = comma delimited list of asset pairs to get info on
+    /// ```
+    ///
+    /// Result: array of pair names and t
