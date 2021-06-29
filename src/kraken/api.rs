@@ -274,4 +274,6 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// <pair_name> = pair name
-    /// a = ask array(<price>, <whole lot 
+    /// a = ask array(<price>, <whole lot volume>, <lot volume>),
+    /// b = bid array(<price>, <whole lot volume>, <lot volume>),
+    /// c = last trade closed array
