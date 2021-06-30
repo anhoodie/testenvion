@@ -276,4 +276,6 @@ impl KrakenApi {
     /// <pair_name> = pair name
     /// a = ask array(<price>, <whole lot volume>, <lot volume>),
     /// b = bid array(<price>, <whole lot volume>, <lot volume>),
-    /// c = last trade closed array
+    /// c = last trade closed array(<price>, <lot volume>),
+    /// v = volume array(<today>, <last 24 hours>),
+    /// p = volume weighted average price array(<today
