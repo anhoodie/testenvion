@@ -281,4 +281,7 @@ impl KrakenApi {
     /// p = volume weighted average price array(<today>, <last 24 hours>),
     /// t = number of trades array(<today>, <last 24 hours>),
     /// l = low array(<today>, <last 24 hours>),
-    
+    /// h = high array(<today>, <last 24 hours>),
+    /// o = today's opening price
+    /// ```
+    pub fn get_ticker
