@@ -284,4 +284,6 @@ impl KrakenApi {
     /// h = high array(<today>, <last 24 hours>),
     /// o = today's opening price
     /// ```
-    pub fn get_ticker
+    pub fn get_ticker_information(&mut self,
+                                  pair: &str)
+                                  -> Result<
