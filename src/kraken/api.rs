@@ -297,4 +297,8 @@ impl KrakenApi {
     /// ```ignore
     /// pair = asset pair to get OHLC data for
     /// interval = time frame interval in minutes (optional):
-    /// 	1 (default), 5, 15, 30, 60, 240, 1440,
+    /// 	1 (default), 5, 15, 30, 60, 240, 1440, 10080, 21600
+    /// since = return committed OHLC data since given id (optional.  exclusive)
+    /// ```
+    ///
+    /// Result: a
