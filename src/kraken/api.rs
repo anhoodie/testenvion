@@ -286,4 +286,7 @@ impl KrakenApi {
     /// ```
     pub fn get_ticker_information(&mut self,
                                   pair: &str)
-                                  -> Result<
+                                  -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("pair", pair);
+        self.pub
