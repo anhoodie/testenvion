@@ -305,4 +305,6 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// <pair_name> = pair name
-    ///     array of array entri
+    ///     array of array entries(<time>, <open>, <high>, <low>, <close>, <vwap>, <volume>,
+    ///     <count>)
+    /// last = id to be used as since when
