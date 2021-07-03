@@ -307,4 +307,7 @@ impl KrakenApi {
     /// <pair_name> = pair name
     ///     array of array entries(<time>, <open>, <high>, <low>, <close>, <vwap>, <volume>,
     ///     <count>)
-    /// last = id to be used as since when
+    /// last = id to be used as since when polling for new, committed OHLC data
+    /// ```
+    ///
+    /// Note: the last entry in the OHLC array is for the current, not-ye
