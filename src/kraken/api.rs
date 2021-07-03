@@ -289,4 +289,10 @@ impl KrakenApi {
                                   -> Result<Map<String, Value>, error::Error> {
         let mut params = HashMap::new();
         params.insert("pair", pair);
-        self.pub
+        self.public_query("Ticker", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// pair = asset pair to get OHL
