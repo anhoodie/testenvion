@@ -301,4 +301,8 @@ impl KrakenApi {
     /// since = return committed OHLC data since given id (optional.  exclusive)
     /// ```
     ///
-    /// Result: a
+    /// Result: array of pair name and OHLC data
+    ///
+    /// ```ignore
+    /// <pair_name> = pair name
+    ///     array of array entri
