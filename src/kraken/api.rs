@@ -312,4 +312,8 @@ impl KrakenApi {
     ///
     /// Note: the last entry in the OHLC array is for the current, not-yet-committed frame and will
     /// always be present, regardless of the value of "since".
-    pub fn get_ohlc_data(&mut se
+    pub fn get_ohlc_data(&mut self,
+                         pair: &str,
+                         interval: &str,
+                         since: &str)
+  
