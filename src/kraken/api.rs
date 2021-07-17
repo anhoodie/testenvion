@@ -334,4 +334,5 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// <pair_name> = pair name
-    ///     asks = ask side
+    ///     asks = ask side array of array entries(<price>, <volume>, <timestamp>)
+    ///     bids = bid side array of array entries(<price>, <volume>, <timestam
