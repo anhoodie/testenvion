@@ -327,4 +327,7 @@ impl KrakenApi {
     /// Input:
     ///
     /// ```ignore
-    /// pair = asset pair to get market dept
+    /// pair = asset pair to get market depth for
+    /// count = maximum number of asks/bids (optional)
+    /// ```
+    /// Result: array of pair 
