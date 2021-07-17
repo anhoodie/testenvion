@@ -335,4 +335,8 @@ impl KrakenApi {
     /// ```ignore
     /// <pair_name> = pair name
     ///     asks = ask side array of array entries(<price>, <volume>, <timestamp>)
-    ///     bids = bid side array of array entries(<price>, <volume>, <timestam
+    ///     bids = bid side array of array entries(<price>, <volume>, <timestamp>)
+    /// ```
+    pub fn get_order_book(&mut self,
+                          pair: &str,
+                          c
