@@ -321,4 +321,10 @@ impl KrakenApi {
         params.insert("pair", pair);
         params.insert("interval", interval);
         params.insert("since", since);
-      
+        self.public_query("OHLC", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// pair = asset pair to get market dept
