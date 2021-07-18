@@ -339,4 +339,6 @@ impl KrakenApi {
     /// ```
     pub fn get_order_book(&mut self,
                           pair: &str,
-                          c
+                          count: &str)
+                          -> Result<Map<String, Value>, error::Error> {
+        let mut p
