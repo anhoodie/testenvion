@@ -344,4 +344,11 @@ impl KrakenApi {
         let mut params = HashMap::new();
         params.insert("pair", pair);
         params.insert("count", count);
-       
+        self.public_query("Depth", &mut params)
+    }
+
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// pair = asset pair to get trade
