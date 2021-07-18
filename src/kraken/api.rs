@@ -351,4 +351,7 @@ impl KrakenApi {
     /// Input:
     ///
     /// ```ignore
-    /// pair = asset pair to get trade
+    /// pair = asset pair to get trade data for
+    /// since = return trade data since given id (optional.  exclusive)
+    /// ```
+    /// Result: array of pair name 
