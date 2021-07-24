@@ -358,4 +358,6 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// <pair_name> = pair name
-    ///     array of array entries(<price>, <vol
+    ///     array of array entries(<price>, <volume>, <time>, <buy/sell>, <market/limit>,
+    /// <miscellaneous>)
+    /// last = id to be used as since when polling for ne
