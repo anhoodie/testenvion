@@ -366,4 +366,7 @@ impl KrakenApi {
                              pair: &str,
                              since: &str)
                              -> Result<Map<String, Value>, error::Error> {
-        let mut 
+        let mut params = HashMap::new();
+        params.insert("pair", pair);
+        params.insert("since", since);
+        self.public_query("Trade
