@@ -360,4 +360,8 @@ impl KrakenApi {
     /// <pair_name> = pair name
     ///     array of array entries(<price>, <volume>, <time>, <buy/sell>, <market/limit>,
     /// <miscellaneous>)
-    /// last = id to be used as since when polling for ne
+    /// last = id to be used as since when polling for new trade data
+    /// ```
+    pub fn get_recent_trades(&mut self,
+                             pair: &str,
+                   
