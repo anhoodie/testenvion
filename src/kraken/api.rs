@@ -364,4 +364,6 @@ impl KrakenApi {
     /// ```
     pub fn get_recent_trades(&mut self,
                              pair: &str,
-                   
+                             since: &str)
+                             -> Result<Map<String, Value>, error::Error> {
+        let mut 
