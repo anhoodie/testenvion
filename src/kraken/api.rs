@@ -369,4 +369,10 @@ impl KrakenApi {
         let mut params = HashMap::new();
         params.insert("pair", pair);
         params.insert("since", since);
-        self.public_query("Trade
+        self.public_query("Trades", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// pair = asset pair to get s
