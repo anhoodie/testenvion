@@ -375,4 +375,7 @@ impl KrakenApi {
     /// Input:
     ///
     /// ```ignore
-    /// pair = asset pair to get s
+    /// pair = asset pair to get spread data for
+    /// since = return spread data since given id (optional.  inclusive)
+    /// ```
+    ///
