@@ -387,4 +387,6 @@ impl KrakenApi {
     /// last = id to be used as since when polling for new spread data
     /// ```
     /// Note: "since" is inclusive so any returned data with the same time as the previous set
-    //
+    /// should overwrite all of the previous set's entries at that time
+    pub fn get_recent_spread_data(&mut self,
+ 
