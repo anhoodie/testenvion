@@ -384,4 +384,7 @@ impl KrakenApi {
     /// ```ignore
     /// <pair_name> = pair name
     ///     array of array entries(<time>, <bid>, <ask>)
-    /// last = id to be used as since when polling for new s
+    /// last = id to be used as since when polling for new spread data
+    /// ```
+    /// Note: "since" is inclusive so any returned data with the same time as the previous set
+    //
