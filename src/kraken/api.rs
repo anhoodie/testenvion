@@ -389,4 +389,6 @@ impl KrakenApi {
     /// Note: "since" is inclusive so any returned data with the same time as the previous set
     /// should overwrite all of the previous set's entries at that time
     pub fn get_recent_spread_data(&mut self,
- 
+                                  pair: &str,
+                                  since: &str)
+                                  -> Result
