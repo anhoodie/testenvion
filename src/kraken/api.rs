@@ -379,3 +379,7 @@ impl KrakenApi {
     /// since = return spread data since given id (optional.  inclusive)
     /// ```
     ///
+    /// Result: array of pair name and recent spread data
+    ///
+    /// ```ignore
+    /// <pair_name> = pair name
