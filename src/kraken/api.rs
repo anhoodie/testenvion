@@ -391,4 +391,7 @@ impl KrakenApi {
     pub fn get_recent_spread_data(&mut self,
                                   pair: &str,
                                   since: &str)
-                                  -> Result
+                                  -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("pair", pair);
+      
