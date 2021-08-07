@@ -394,4 +394,8 @@ impl KrakenApi {
                                   -> Result<Map<String, Value>, error::Error> {
         let mut params = HashMap::new();
         params.insert("pair", pair);
-      
+        params.insert("since", since);
+        self.public_query("Spread", &mut params)
+    }
+
+    /// Result: array of asset names and 
