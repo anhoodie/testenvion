@@ -398,4 +398,6 @@ impl KrakenApi {
         self.public_query("Spread", &mut params)
     }
 
-    /// Result: array of asset names and 
+    /// Result: array of asset names and balance amount
+    pub fn get_account_balance(&mut self) -> Result<Map<String, Value>, error::Error> {
+        let mut pa
