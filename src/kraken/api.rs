@@ -400,4 +400,10 @@ impl KrakenApi {
 
     /// Result: array of asset names and balance amount
     pub fn get_account_balance(&mut self) -> Result<Map<String, Value>, error::Error> {
-        let mut pa
+        let mut params = HashMap::new();
+        self.private_query("Balance", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ig
