@@ -409,4 +409,8 @@ impl KrakenApi {
     /// ```ignore
     /// aclass = asset class (optional):
     ///     currency (default)
-    /// asset = base a
+    /// asset = base asset used to determine balance (default = ZUSD)
+    /// ```
+    /// Result: array of trade balance info
+    ///
+   
