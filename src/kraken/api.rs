@@ -415,4 +415,6 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// eb = equivalent balance (combined balance of all currencies)
-    /// tb = trade balance (combined
+    /// tb = trade balance (combined balance of all equity currencies)
+    /// m = margin amount of open positions
+    /// n = unrealized net profit/loss of open pos
