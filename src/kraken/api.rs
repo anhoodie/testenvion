@@ -406,4 +406,7 @@ impl KrakenApi {
 
     /// Input:
     ///
-    /// ```ig
+    /// ```ignore
+    /// aclass = asset class (optional):
+    ///     currency (default)
+    /// asset = base a
