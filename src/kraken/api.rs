@@ -413,4 +413,6 @@ impl KrakenApi {
     /// ```
     /// Result: array of trade balance info
     ///
-   
+    /// ```ignore
+    /// eb = equivalent balance (combined balance of all currencies)
+    /// tb = trade balance (combined
