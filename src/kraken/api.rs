@@ -421,4 +421,7 @@ impl KrakenApi {
     /// c = cost basis of open positions
     /// v = current floating valuation of open positions
     /// e = equity = trade balance + unrealized net profit/loss
-    /// mf = free margin = equity - initial margin (maximum margin available to op
+    /// mf = free margin = equity - initial margin (maximum margin available to open new positions)
+    /// ml = margin level = (equity / initial margin) * 100
+    /// ```
+    /// Note: Rates us
