@@ -420,4 +420,5 @@ impl KrakenApi {
     /// n = unrealized net profit/loss of open positions
     /// c = cost basis of open positions
     /// v = current floating valuation of open positions
-    /// e = equity = trade bala
+    /// e = equity = trade balance + unrealized net profit/loss
+    /// mf = free margin = equity - initial margin (maximum margin available to op
