@@ -426,4 +426,6 @@ impl KrakenApi {
     /// ```
     /// Note: Rates used for the floating valuation is the midpoint of the best bid and ask prices
     pub fn get_trade_balance(&mut self,
-     
+                             aclass: &str,
+                             asset: &str)
+                             -> Result<Map
