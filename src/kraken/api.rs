@@ -424,4 +424,6 @@ impl KrakenApi {
     /// mf = free margin = equity - initial margin (maximum margin available to open new positions)
     /// ml = margin level = (equity / initial margin) * 100
     /// ```
-    /// Note: Rates us
+    /// Note: Rates used for the floating valuation is the midpoint of the best bid and ask prices
+    pub fn get_trade_balance(&mut self,
+     
