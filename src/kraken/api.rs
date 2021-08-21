@@ -436,4 +436,7 @@ impl KrakenApi {
     }
 
     /// Input:
-  
+    ///
+    /// ```ignore
+    /// trades = whether or not to include trades in output (optional.  default = false)
+    /// 
