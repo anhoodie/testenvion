@@ -428,4 +428,7 @@ impl KrakenApi {
     pub fn get_trade_balance(&mut self,
                              aclass: &str,
                              asset: &str)
-                             -> Result<Map
+                             -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("aclass", aclass);
+        par
