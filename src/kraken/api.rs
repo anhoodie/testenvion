@@ -446,4 +446,7 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// refid = Referral order transaction id that created this order
-    /
+    /// userref = user reference id
+    /// status = status of order:
+    ///     pending = order pending book entry
+    ///  
