@@ -442,4 +442,8 @@ impl KrakenApi {
     /// userref = restrict results to given user reference id (optional)
     /// ```
     ///
-    /// Result: array of order info in open 
+    /// Result: array of order info in open array with txid as the key
+    ///
+    /// ```ignore
+    /// refid = Referral order transaction id that created this order
+    /
