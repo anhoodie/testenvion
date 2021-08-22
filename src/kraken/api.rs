@@ -439,4 +439,7 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// trades = whether or not to include trades in output (optional.  default = false)
-    /// 
+    /// userref = restrict results to given user reference id (optional)
+    /// ```
+    ///
+    /// Result: array of order info in open 
