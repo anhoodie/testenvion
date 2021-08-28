@@ -449,4 +449,7 @@ impl KrakenApi {
     /// userref = user reference id
     /// status = status of order:
     ///     pending = order pending book entry
-    ///  
+    ///     open = open order
+    ///     closed = closed order
+    ///     canceled = order canceled
+    ///     expired = order expi
