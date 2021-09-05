@@ -454,4 +454,6 @@ impl KrakenApi {
     ///     canceled = order canceled
     ///     expired = order expired
     /// opentm = unix timestamp of when order was placed
-    /// starttm = unix timestamp of order start time (or 0 if no
+    /// starttm = unix timestamp of order start time (or 0 if not set)
+    /// expiretm = unix timestamp of order end time (or 0 if not set)
+    /// descr = order description info
