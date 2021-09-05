@@ -459,4 +459,7 @@ impl KrakenApi {
     /// descr = order description info
     ///     pair = asset pair
     ///     type = type of order (buy/sell)
-    ///     ordertype = order type
+    ///     ordertype = order type (See Add standard order)
+    ///     price = primary price
+    ///     price2 = secondary price
+    ///     leverage = am
