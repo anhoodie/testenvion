@@ -457,3 +457,6 @@ impl KrakenApi {
     /// starttm = unix timestamp of order start time (or 0 if not set)
     /// expiretm = unix timestamp of order end time (or 0 if not set)
     /// descr = order description info
+    ///     pair = asset pair
+    ///     type = type of order (buy/sell)
+    ///     ordertype = order type
