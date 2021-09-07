@@ -462,4 +462,6 @@ impl KrakenApi {
     ///     ordertype = order type (See Add standard order)
     ///     price = primary price
     ///     price2 = secondary price
-    ///     leverage = am
+    ///     leverage = amount of leverage
+    ///     order = order description
+    ///     close = conditional close order descr
