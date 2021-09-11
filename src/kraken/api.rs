@@ -464,4 +464,6 @@ impl KrakenApi {
     ///     price2 = secondary price
     ///     leverage = amount of leverage
     ///     order = order description
-    ///     close = conditional close order descr
+    ///     close = conditional close order description (if conditional close set)
+    /// vol = volume of order (base currency unless viqc set in oflags)
+    /// vol_exec = volume execu
