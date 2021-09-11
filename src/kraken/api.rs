@@ -466,4 +466,5 @@ impl KrakenApi {
     ///     order = order description
     ///     close = conditional close order description (if conditional close set)
     /// vol = volume of order (base currency unless viqc set in oflags)
-    /// vol_exec = volume execu
+    /// vol_exec = volume executed (base currency unless viqc set in oflags)
+    /// cost = total cost (quote currency unless unless viqc set in
