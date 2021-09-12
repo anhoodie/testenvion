@@ -469,4 +469,6 @@ impl KrakenApi {
     /// vol_exec = volume executed (base currency unless viqc set in oflags)
     /// cost = total cost (quote currency unless unless viqc set in oflags)
     /// fee = total fee (quote currency)
-    /// price = average price (quote currency unless viqc set in ofl
+    /// price = average price (quote currency unless viqc set in oflags)
+    /// stopprice = stop price (quote currency, for trailing stops)
+    /// limitprice = triggered limit pric
