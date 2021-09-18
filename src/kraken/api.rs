@@ -473,4 +473,6 @@ impl KrakenApi {
     /// stopprice = stop price (quote currency, for trailing stops)
     /// limitprice = triggered limit price (quote currency, when limit based order type triggered)
     /// misc = comma delimited list of miscellaneous info
-    ///  
+    ///     stopped = triggered by stop price
+    ///     touched = triggered by touch price
+    ///     liquidated 
