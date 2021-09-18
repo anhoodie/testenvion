@@ -471,4 +471,6 @@ impl KrakenApi {
     /// fee = total fee (quote currency)
     /// price = average price (quote currency unless viqc set in oflags)
     /// stopprice = stop price (quote currency, for trailing stops)
-    /// limitprice = triggered limit pric
+    /// limitprice = triggered limit price (quote currency, when limit based order type triggered)
+    /// misc = comma delimited list of miscellaneous info
+    ///  
