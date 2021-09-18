@@ -480,4 +480,6 @@ impl KrakenApi {
     /// oflags = comma delimited list of order flags
     ///     viqc = volume in quote currency
     ///     fcib = prefer fee in base currency (default if selling)
-    ///     fciq = 
+    ///     fciq = prefer fee in quote currency (default if buying)
+    ///     nompp = no market price protection
+    /// trades = array of trade ids related to orde
