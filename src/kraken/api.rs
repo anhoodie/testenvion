@@ -478,4 +478,6 @@ impl KrakenApi {
     ///     liquidated = liquidation
     ///     partial = partial fill
     /// oflags = comma delimited list of order flags
-    ///     viqc = volum
+    ///     viqc = volume in quote currency
+    ///     fcib = prefer fee in base currency (default if selling)
+    ///     fciq = 
