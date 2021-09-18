@@ -475,4 +475,7 @@ impl KrakenApi {
     /// misc = comma delimited list of miscellaneous info
     ///     stopped = triggered by stop price
     ///     touched = triggered by touch price
-    ///     liquidated 
+    ///     liquidated = liquidation
+    ///     partial = partial fill
+    /// oflags = comma delimited list of order flags
+    ///     viqc = volum
