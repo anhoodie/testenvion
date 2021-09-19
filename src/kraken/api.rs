@@ -482,4 +482,7 @@ impl KrakenApi {
     ///     fcib = prefer fee in base currency (default if selling)
     ///     fciq = prefer fee in quote currency (default if buying)
     ///     nompp = no market price protection
-    /// trades = array of trade ids related to orde
+    /// trades = array of trade ids related to order (if trades info requested and data available)
+    /// ```
+    ///
+    /// Note: Unless otherwise stated, costs, f
