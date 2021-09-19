@@ -485,4 +485,5 @@ impl KrakenApi {
     /// trades = array of trade ids related to order (if trades info requested and data available)
     /// ```
     ///
-    /// Note: Unless otherwise stated, costs, f
+    /// Note: Unless otherwise stated, costs, fees, prices, and volumes are in the asset pair's
+    /// scale, not the currency's scale. For example, if the asset pair 
