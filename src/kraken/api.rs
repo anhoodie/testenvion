@@ -488,4 +488,5 @@ impl KrakenApi {
     /// Note: Unless otherwise stated, costs, fees, prices, and volumes are in the asset pair's
     /// scale, not the currency's scale. For example, if the asset pair uses a lot size that has
     /// a scale of 8, the volume will use a scale of 8, even if the currency it represents only has
- 
+    /// a scale of 2.
+    /// Similarly, if the asset pair's pricing scale is 5, the scale will remain as 5, eve
