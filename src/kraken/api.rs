@@ -489,4 +489,7 @@ impl KrakenApi {
     /// scale, not the currency's scale. For example, if the asset pair uses a lot size that has
     /// a scale of 8, the volume will use a scale of 8, even if the currency it represents only has
     /// a scale of 2.
-    /// Similarly, if the asset pair's pricing scale is 5, the scale will remain as 5, eve
+    /// Similarly, if the asset pair's pricing scale is 5, the scale will remain as 5, even if the
+    /// underlying currency has a scale of 8.
+    pub fn get_open_orders(&mut self,
+                           trades: &str
