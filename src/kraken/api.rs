@@ -492,4 +492,7 @@ impl KrakenApi {
     /// Similarly, if the asset pair's pricing scale is 5, the scale will remain as 5, even if the
     /// underlying currency has a scale of 8.
     pub fn get_open_orders(&mut self,
-                           trades: &str
+                           trades: &str,
+                           userref: &str)
+                           -> Result<Map<String, Value>, error::Error> {
+        let mut 
