@@ -498,4 +498,10 @@ impl KrakenApi {
         let mut params = HashMap::new();
         params.insert("trades", trades);
         params.insert("userref", userref);
-    
+        self.private_query("OpenOrders", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// trades = whe
