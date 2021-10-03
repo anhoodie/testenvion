@@ -505,4 +505,6 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// trades = whether or not to include trades in output (optional.  default = false)
-    /// userref = restrict results to given user reference id (
+    /// userref = restrict results to given user reference id (optional)
+    /// start = starting unix timestamp or order tx id of results (optional.  exclusive)
+    /// e
