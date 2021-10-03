@@ -504,4 +504,5 @@ impl KrakenApi {
     /// Input:
     ///
     /// ```ignore
-    /// trades = whe
+    /// trades = whether or not to include trades in output (optional.  default = false)
+    /// userref = restrict results to given user reference id (
