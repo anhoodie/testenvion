@@ -509,4 +509,10 @@ impl KrakenApi {
     /// start = starting unix timestamp or order tx id of results (optional.  exclusive)
     /// end = ending unix timestamp or order tx id of results (optional.  inclusive)
     /// ofs = result offset
-    /// closetim
+    /// closetime = which time to use (optional)
+    ///     open
+    ///     close
+    ///     both (default)
+    /// ```
+    ///
+    /// Res
