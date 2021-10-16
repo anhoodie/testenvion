@@ -515,4 +515,7 @@ impl KrakenApi {
     ///     both (default)
     /// ```
     ///
-    /// Res
+    /// Result: array of order info
+    ///
+    /// ```ignore
+    /// closed = array of order info.  See Get open orders.  Additional f
