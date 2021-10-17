@@ -523,4 +523,5 @@ impl KrakenApi {
     ///     reason = additional info on status (if any)
     /// count = amount of available order info matching criteria
     /// ```
-    /// Note: Times given b
+    /// Note: Times given by order tx ids are more accurate than unix timestamps. If an order tx id
+    /// is given for the time, the ord
