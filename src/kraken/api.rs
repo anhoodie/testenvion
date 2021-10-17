@@ -518,4 +518,6 @@ impl KrakenApi {
     /// Result: array of order info
     ///
     /// ```ignore
-    /// closed = array of order info.  See Get open orders.  Additional f
+    /// closed = array of order info.  See Get open orders.  Additional fields:
+    ///     closetm = unix timestamp of when order was closed
+    ///     reason = additional info on status (
