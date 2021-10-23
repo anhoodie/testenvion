@@ -527,4 +527,7 @@ impl KrakenApi {
     /// is given for the time, the order's open time is used
     pub fn get_closed_orders(&mut self,
                              trades: &str,
-        
+                             userref: &str,
+                             start: &str,
+                             end: &str,
+               
