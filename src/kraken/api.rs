@@ -524,4 +524,7 @@ impl KrakenApi {
     /// count = amount of available order info matching criteria
     /// ```
     /// Note: Times given by order tx ids are more accurate than unix timestamps. If an order tx id
-    /// is given for the time, the ord
+    /// is given for the time, the order's open time is used
+    pub fn get_closed_orders(&mut self,
+                             trades: &str,
+        
