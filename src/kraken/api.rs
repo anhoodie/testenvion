@@ -530,4 +530,6 @@ impl KrakenApi {
                              userref: &str,
                              start: &str,
                              end: &str,
-               
+                             ofs: &str,
+                             closetime: &str)
+                             -> Result<
