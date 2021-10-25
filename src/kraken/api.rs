@@ -538,4 +538,6 @@ impl KrakenApi {
         params.insert("userref", userref);
         params.insert("start", start);
         params.insert("end", end);
-     
+        params.insert("ofs", ofs);
+        params.insert("closetime", closetime);
+        self.private_query("OpenOrders", &mu
