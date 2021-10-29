@@ -540,4 +540,10 @@ impl KrakenApi {
         params.insert("end", end);
         params.insert("ofs", ofs);
         params.insert("closetime", closetime);
-        self.private_query("OpenOrders", &mu
+        self.private_query("OpenOrders", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// trades = whether or not to include trades in ou
