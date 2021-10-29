@@ -546,4 +546,6 @@ impl KrakenApi {
     /// Input:
     ///
     /// ```ignore
-    /// trades = whether or not to include trades in ou
+    /// trades = whether or not to include trades in output (optional.  default = false)
+    /// userref = restrict results to given user reference id (optional)
+    /// txid = comma delimited list o
