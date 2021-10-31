@@ -548,4 +548,7 @@ impl KrakenApi {
     /// ```ignore
     /// trades = whether or not to include trades in output (optional.  default = false)
     /// userref = restrict results to given user reference id (optional)
-    /// txid = comma delimited list o
+    /// txid = comma delimited list of transaction ids to query info about (20 maximum)
+    /// ```
+    /// Result: associative array of orders info
+    ///
