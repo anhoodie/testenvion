@@ -552,3 +552,7 @@ impl KrakenApi {
     /// ```
     /// Result: associative array of orders info
     ///
+    /// ```ignore
+    /// <order_txid> = order info.  See Get open orders/Get closed orders
+    /// ```
+    pub fn 
