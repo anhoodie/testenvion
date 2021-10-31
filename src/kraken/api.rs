@@ -555,4 +555,6 @@ impl KrakenApi {
     /// ```ignore
     /// <order_txid> = order info.  See Get open orders/Get closed orders
     /// ```
-    pub fn 
+    pub fn query_orders_info(&mut self,
+                             trades: &str,
+                             userref: &str,
