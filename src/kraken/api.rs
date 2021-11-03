@@ -558,3 +558,6 @@ impl KrakenApi {
     pub fn query_orders_info(&mut self,
                              trades: &str,
                              userref: &str,
+                             txid: &str)
+                             -> Result<Map<String, Value>, error::Error> {
+     
