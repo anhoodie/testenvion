@@ -560,4 +560,6 @@ impl KrakenApi {
                              userref: &str,
                              txid: &str)
                              -> Result<Map<String, Value>, error::Error> {
-     
+        let mut params = HashMap::new();
+        params.insert("trades", trades);
+        params.insert("userref", us
