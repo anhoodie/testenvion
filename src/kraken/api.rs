@@ -568,3 +568,8 @@ impl KrakenApi {
     }
 
     /// Input:
+    ///
+    /// ```ignore
+    /// type = type of trade (optional)
+    ///     all = all types (default)
+    ///     any
