@@ -574,4 +574,6 @@ impl KrakenApi {
     ///     all = all types (default)
     ///     any position = any position (open or closed)
     ///     closed position = positions that have been closed
-    ///     closing 
+    ///     closing position = any trade closing all or part of a position
+    ///     no position = non-positional trades
+ 
