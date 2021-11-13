@@ -576,4 +576,6 @@ impl KrakenApi {
     ///     closed position = positions that have been closed
     ///     closing position = any trade closing all or part of a position
     ///     no position = non-positional trades
- 
+    /// trades = whether or not to include trades related to position in output (optional.
+    /// default = false)
+    /// 
