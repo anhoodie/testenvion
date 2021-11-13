@@ -578,4 +578,5 @@ impl KrakenApi {
     ///     no position = non-positional trades
     /// trades = whether or not to include trades related to position in output (optional.
     /// default = false)
-    /// 
+    /// start = starting unix timestamp or trade tx id of results (optional.  exclusive)
+    /// end = ending unix timestamp or trade
