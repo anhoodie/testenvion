@@ -582,4 +582,8 @@ impl KrakenApi {
     /// end = ending unix timestamp or trade tx id of results (optional.  inclusive)
     /// ofs = result offset
     /// ```
-    /// Result: ar
+    /// Result: array of trade info
+    ///
+    /// ```ignore
+    /// trades = array of trade info with txid as the key
+    ///     order
