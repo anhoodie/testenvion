@@ -586,4 +586,6 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// trades = array of trade info with txid as the key
-    ///     order
+    ///     ordertxid = order responsible for execution of trade
+    ///     pair = asset pair
+    ///     time = unix timesta
