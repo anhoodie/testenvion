@@ -588,4 +588,7 @@ impl KrakenApi {
     /// trades = array of trade info with txid as the key
     ///     ordertxid = order responsible for execution of trade
     ///     pair = asset pair
-    ///     time = unix timesta
+    ///     time = unix timestamp of trade
+    ///     type = type of order (buy/sell)
+    ///     ordertype = order type
+    ///     price = average pr
