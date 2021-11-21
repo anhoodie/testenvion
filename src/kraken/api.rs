@@ -591,4 +591,6 @@ impl KrakenApi {
     ///     time = unix timestamp of trade
     ///     type = type of order (buy/sell)
     ///     ordertype = order type
-    ///     price = average pr
+    ///     price = average price order was executed at (quote currency)
+    ///     cost = total cost of order (quote currency)
+    ///     fee = total fee (quot
