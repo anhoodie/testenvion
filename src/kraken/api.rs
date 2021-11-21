@@ -593,4 +593,7 @@ impl KrakenApi {
     ///     ordertype = order type
     ///     price = average price order was executed at (quote currency)
     ///     cost = total cost of order (quote currency)
-    ///     fee = total fee (quot
+    ///     fee = total fee (quote currency)
+    ///     vol = volume (base currency)
+    ///     margin = initial margin (quote currency)
+    ///     misc = c
