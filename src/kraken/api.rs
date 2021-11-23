@@ -596,4 +596,6 @@ impl KrakenApi {
     ///     fee = total fee (quote currency)
     ///     vol = volume (base currency)
     ///     margin = initial margin (quote currency)
-    ///     misc = c
+    ///     misc = comma delimited list of miscellaneous info
+    ///         closing = trade closes all or part of a position
+    /// count 
