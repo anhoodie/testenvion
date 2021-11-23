@@ -598,4 +598,5 @@ impl KrakenApi {
     ///     margin = initial margin (quote currency)
     ///     misc = comma delimited list of miscellaneous info
     ///         closing = trade closes all or part of a position
-    /// count 
+    /// count = amount of available trades info matching criteria
+    /// If the trade opened a position, the follow fields are
