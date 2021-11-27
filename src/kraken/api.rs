@@ -599,4 +599,7 @@ impl KrakenApi {
     ///     misc = comma delimited list of miscellaneous info
     ///         closing = trade closes all or part of a position
     /// count = amount of available trades info matching criteria
-    /// If the trade opened a position, the follow fields are
+    /// If the trade opened a position, the follow fields are also present in the trade info:
+    ///
+    ///     posstatus = position status (open/closed)
+    ///     cprice 
