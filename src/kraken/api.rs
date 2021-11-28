@@ -602,4 +602,5 @@ impl KrakenApi {
     /// If the trade opened a position, the follow fields are also present in the trade info:
     ///
     ///     posstatus = position status (open/closed)
-    ///     cprice 
+    ///     cprice = average price of closed portion of position (quote currency)
+    ///     ccost = total cost of closed portion of position
