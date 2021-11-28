@@ -605,4 +605,5 @@ impl KrakenApi {
     ///     cprice = average price of closed portion of position (quote currency)
     ///     ccost = total cost of closed portion of position (quote currency)
     ///     cfee = total fee of closed portion of position (quote currency)
-    ///     cvol = tota
+    ///     cvol = total fee of closed portion of position (quote currency)
+    ///     cmargin = total margin freed in closed portion of position (quote cur
