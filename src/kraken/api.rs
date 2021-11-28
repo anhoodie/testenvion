@@ -603,4 +603,6 @@ impl KrakenApi {
     ///
     ///     posstatus = position status (open/closed)
     ///     cprice = average price of closed portion of position (quote currency)
-    ///     ccost = total cost of closed portion of position
+    ///     ccost = total cost of closed portion of position (quote currency)
+    ///     cfee = total fee of closed portion of position (quote currency)
+    ///     cvol = tota
