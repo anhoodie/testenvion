@@ -609,4 +609,9 @@ impl KrakenApi {
     ///     cmargin = total margin freed in closed portion of position (quote currency)
     ///     net = net profit/loss of closed portion of position (quote currency, quote currency
     ///     scale)
-    
+    ///     trades = list of closing trades for position (if available)
+    /// ```
+    ///
+    /// Note:
+    ///
+    /// Un
