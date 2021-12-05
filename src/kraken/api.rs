@@ -617,4 +617,6 @@ impl KrakenApi {
     /// Unless otherwise stated, costs, fees, prices, and volumes are in the asset pair's scale,
     /// not the currency's scale.
     /// Times given by trade tx ids are more accurate than unix timestamps.
-  
+    pub fn get_trades_history(&mut self,
+                              type_trade: &str,
+                           
