@@ -615,4 +615,6 @@ impl KrakenApi {
     /// Note:
     ///
     /// Unless otherwise stated, costs, fees, prices, and volumes are in the asset pair's scale,
-    /// not the c
+    /// not the currency's scale.
+    /// Times given by trade tx ids are more accurate than unix timestamps.
+  
