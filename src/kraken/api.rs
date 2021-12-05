@@ -619,4 +619,7 @@ impl KrakenApi {
     /// Times given by trade tx ids are more accurate than unix timestamps.
     pub fn get_trades_history(&mut self,
                               type_trade: &str,
-                           
+                              trades: &str,
+                              start: &str,
+                              end: &str,
+                              ofs: &st
