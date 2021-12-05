@@ -614,4 +614,5 @@ impl KrakenApi {
     ///
     /// Note:
     ///
-    /// Un
+    /// Unless otherwise stated, costs, fees, prices, and volumes are in the asset pair's scale,
+    /// not the c
