@@ -625,4 +625,6 @@ impl KrakenApi {
                               ofs: &str)
                               -> Result<Map<String, Value>, error::Error> {
         let mut params = HashMap::new();
-  
+        params.insert("type", type_trade);
+        params.insert("trades", trades);
+        params.insert("start", start);
