@@ -628,3 +628,6 @@ impl KrakenApi {
         params.insert("type", type_trade);
         params.insert("trades", trades);
         params.insert("start", start);
+        params.insert("end", end);
+        params.insert("ofs", ofs);
+        self.private_query("TradesHistory", &mut par
