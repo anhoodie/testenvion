@@ -630,4 +630,10 @@ impl KrakenApi {
         params.insert("start", start);
         params.insert("end", end);
         params.insert("ofs", ofs);
-        self.private_query("TradesHistory", &mut par
+        self.private_query("TradesHistory", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// txid = comma delimited list of transaction ids to query
