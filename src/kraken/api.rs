@@ -638,3 +638,9 @@ impl KrakenApi {
     /// ```ignore
     /// txid = comma delimited list of transaction ids to query info about (20 maximum)
     /// trades = whether or not to include trades related to position in output (optional.
+    /// default = false)
+    /// ```
+    // Result: associative array of trades info
+    ///
+    /// ```ignore
+    /// <
