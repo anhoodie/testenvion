@@ -648,4 +648,7 @@ impl KrakenApi {
     pub fn query_trades_info(&mut self,
                              txid: &str,
                              trades: &str)
-                             -> Result<Map<String, Value>, er
+                             -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("txid", txid);
+        params.i
