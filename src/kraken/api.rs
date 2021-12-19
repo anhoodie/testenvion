@@ -643,4 +643,7 @@ impl KrakenApi {
     // Result: associative array of trades info
     ///
     /// ```ignore
-    /// <
+    /// <trade_txid> = trade info.  See Get trades history
+    /// ```
+    pub fn query_trades_info(&mut self,
+                 
