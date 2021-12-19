@@ -646,4 +646,6 @@ impl KrakenApi {
     /// <trade_txid> = trade info.  See Get trades history
     /// ```
     pub fn query_trades_info(&mut self,
-                 
+                             txid: &str,
+                             trades: &str)
+                             -> Result<Map<String, Value>, er
