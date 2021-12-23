@@ -656,3 +656,6 @@ impl KrakenApi {
     }
     /// Input:
     ///
+    /// ```ignore
+    /// txid = comma delimited list of transaction ids to restrict output to
+    /// docalcs = wheth
