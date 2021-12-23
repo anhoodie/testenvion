@@ -651,4 +651,8 @@ impl KrakenApi {
                              -> Result<Map<String, Value>, error::Error> {
         let mut params = HashMap::new();
         params.insert("txid", txid);
-        params.i
+        params.insert("trades", trades);
+        self.private_query("QueryTrades", &mut params)
+    }
+    /// Input:
+    ///
