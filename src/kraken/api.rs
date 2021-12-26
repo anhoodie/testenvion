@@ -658,4 +658,6 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// txid = comma delimited list of transaction ids to restrict output to
-    /// docalcs = wheth
+    /// docalcs = whether or not to include profit/loss calculations (optional.  default = false)
+    /// ```
+    /// Result: associative arr
