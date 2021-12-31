@@ -666,4 +666,6 @@ impl KrakenApi {
     /// <position_txid> = open position info
     ///     ordertxid = order responsible for execution of trade
     ///     pair = asset pair
-    ///     time = unix timestamp 
+    ///     time = unix timestamp of trade
+    ///     type = type of order used to open position (buy/sell)
+    ///     ordertype = or
