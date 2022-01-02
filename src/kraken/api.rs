@@ -671,4 +671,6 @@ impl KrakenApi {
     ///     ordertype = order type used to open position
     ///     cost = opening cost of position (quote currency unless viqc set in oflags)
     ///     fee = opening fee of position (quote currency)
-    ///     vol = position volume (base currency unless viqc set in of
+    ///     vol = position volume (base currency unless viqc set in oflags)
+    ///     vol_closed = position volume closed (base currency unless viqc set in oflags)
+    ///     ma
