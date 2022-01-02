@@ -668,4 +668,5 @@ impl KrakenApi {
     ///     pair = asset pair
     ///     time = unix timestamp of trade
     ///     type = type of order used to open position (buy/sell)
-    ///     ordertype = or
+    ///     ordertype = order type used to open position
+    ///     cost = opening cost of position (quote currency unless viqc set in oflag
