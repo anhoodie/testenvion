@@ -674,4 +674,6 @@ impl KrakenApi {
     ///     vol = position volume (base currency unless viqc set in oflags)
     ///     vol_closed = position volume closed (base currency unless viqc set in oflags)
     ///     margin = initial margin (quote currency)
-    ///     value = current value of remaining position (if docalcs requested.  
+    ///     value = current value of remaining position (if docalcs requested.  quote currency)
+    ///     net = unrealized profit/loss of remaining position (if docalcs requested.  quote
+    ///           
