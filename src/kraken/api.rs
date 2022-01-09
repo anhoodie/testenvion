@@ -676,4 +676,6 @@ impl KrakenApi {
     ///     margin = initial margin (quote currency)
     ///     value = current value of remaining position (if docalcs requested.  quote currency)
     ///     net = unrealized profit/loss of remaining position (if docalcs requested.  quote
-    ///           
+    ///           currency, quote currency scale)
+    ///     misc = comma delimited list of miscellaneous info
+    ///     oflags = c
