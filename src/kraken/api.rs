@@ -678,4 +678,8 @@ impl KrakenApi {
     ///     net = unrealized profit/loss of remaining position (if docalcs requested.  quote
     ///           currency, quote currency scale)
     ///     misc = comma delimited list of miscellaneous info
-    ///     oflags = c
+    ///     oflags = comma delimited list of order flags
+    ///         viqc = volume in quote currency
+    /// ```
+    ///
+    /// Note: Unless otherwi
