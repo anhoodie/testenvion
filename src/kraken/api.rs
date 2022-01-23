@@ -689,4 +689,9 @@ impl KrakenApi {
                               docalcs: &str)
                               -> Result<Map<String, Value>, error::Error> {
         let mut params = HashMap::new();
-        params.insert(
+        params.insert("txid", txid);
+        params.insert("docalcs", docalcs);
+        self.private_query("OpenPositions", &mut params)
+    }
+
+    /// Inpu
