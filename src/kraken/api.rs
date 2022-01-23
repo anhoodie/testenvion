@@ -694,4 +694,9 @@ impl KrakenApi {
         self.private_query("OpenPositions", &mut params)
     }
 
-    /// Inpu
+    /// Input:
+    ///
+    /// ```ignore
+    /// aclass = asset class (optional):
+    ///     currency (default)
+    /// asset = comma delimited lis
