@@ -699,4 +699,5 @@ impl KrakenApi {
     /// ```ignore
     /// aclass = asset class (optional):
     ///     currency (default)
-    /// asset = comma delimited lis
+    /// asset = comma delimited list of assets to restrict output to (optional.  default = all)
+    /// type = type of ledger to retrieve (optional):
