@@ -684,4 +684,7 @@ impl KrakenApi {
     ///
     /// Note: Unless otherwise stated, costs, fees, prices, and volumes are in the asset pair's
     /// scale, not the currency's scale.
-    pub fn get_open_posi
+    pub fn get_open_positions(&mut self,
+                              txid: &str,
+                              docalcs: &str)
+     
