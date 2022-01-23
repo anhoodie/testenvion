@@ -687,4 +687,6 @@ impl KrakenApi {
     pub fn get_open_positions(&mut self,
                               txid: &str,
                               docalcs: &str)
-     
+                              -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert(
