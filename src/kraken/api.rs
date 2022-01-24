@@ -701,3 +701,9 @@ impl KrakenApi {
     ///     currency (default)
     /// asset = comma delimited list of assets to restrict output to (optional.  default = all)
     /// type = type of ledger to retrieve (optional):
+    ///     all (default)
+    ///     deposit
+    ///     withdrawal
+    ///     trade
+    ///     margin
+    /// 
