@@ -707,4 +707,7 @@ impl KrakenApi {
     ///     trade
     ///     margin
     /// start = starting unix timestamp or ledger id of results (optional.  exclusive)
-    /// end = ending unix timesta
+    /// end = ending unix timestamp or ledger id of results (optional.  inclusive)
+    /// ofs = result offset
+    /// ```
+    /// Result: associative array of ledgers 
