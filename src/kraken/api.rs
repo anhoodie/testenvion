@@ -715,4 +715,8 @@ impl KrakenApi {
     /// ```ignore
     /// <ledger_id> = ledger info
     ///     refid = reference id
-    ///     time = un
+    ///     time = unx timestamp of ledger
+    ///     type = type of ledger entry
+    ///     aclass = asset class
+    ///     asset = asset
+    
