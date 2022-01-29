@@ -710,4 +710,9 @@ impl KrakenApi {
     /// end = ending unix timestamp or ledger id of results (optional.  inclusive)
     /// ofs = result offset
     /// ```
-    /// Result: associative array of ledgers 
+    /// Result: associative array of ledgers info
+    ///
+    /// ```ignore
+    /// <ledger_id> = ledger info
+    ///     refid = reference id
+    ///     time = un
