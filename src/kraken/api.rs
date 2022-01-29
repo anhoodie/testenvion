@@ -706,4 +706,5 @@ impl KrakenApi {
     ///     withdrawal
     ///     trade
     ///     margin
-    /// 
+    /// start = starting unix timestamp or ledger id of results (optional.  exclusive)
+    /// end = ending unix timesta
