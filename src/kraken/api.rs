@@ -719,4 +719,7 @@ impl KrakenApi {
     ///     type = type of ledger entry
     ///     aclass = asset class
     ///     asset = asset
-    
+    ///     amount = transaction amount
+    ///     fee = transaction fee
+    ///     balance = resulting balance
+    /// ```
