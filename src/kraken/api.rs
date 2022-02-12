@@ -728,4 +728,7 @@ impl KrakenApi {
                             aclass: &str,
                             asset: &str,
                             type_ledger: &str,
-     
+                            start: &str,
+                            end: &str,
+                            ofs: &str)
+             
