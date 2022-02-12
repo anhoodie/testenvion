@@ -724,4 +724,8 @@ impl KrakenApi {
     ///     balance = resulting balance
     /// ```
     /// Note: Times given by ledger ids are more accurate than unix timestamps.
-    pub fn get_ledgers_info(&mut s
+    pub fn get_ledgers_info(&mut self,
+                            aclass: &str,
+                            asset: &str,
+                            type_ledger: &str,
+     
