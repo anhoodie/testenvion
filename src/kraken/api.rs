@@ -723,3 +723,5 @@ impl KrakenApi {
     ///     fee = transaction fee
     ///     balance = resulting balance
     /// ```
+    /// Note: Times given by ledger ids are more accurate than unix timestamps.
+    pub fn get_ledgers_info(&mut s
