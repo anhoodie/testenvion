@@ -736,4 +736,7 @@ impl KrakenApi {
         params.insert("aclass", aclass);
         params.insert("asset", asset);
         params.insert("type_ledger", type_ledger);
-        params
+        params.insert("start", start);
+        params.insert("end", end);
+        params.insert("ofs", ofs);
+        self.private
