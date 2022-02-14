@@ -739,4 +739,10 @@ impl KrakenApi {
         params.insert("start", start);
         params.insert("end", end);
         params.insert("ofs", ofs);
-        self.private
+        self.private_query("Ledgers", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// id = comma delimited l
