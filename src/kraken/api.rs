@@ -745,4 +745,6 @@ impl KrakenApi {
     /// Input:
     ///
     /// ```ignore
-    /// id = comma delimited l
+    /// id = comma delimited list of ledger ids to query info about (20 maximum)
+    /// ```
+    /// Result: associative array of led
