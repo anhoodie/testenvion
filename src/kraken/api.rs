@@ -747,4 +747,9 @@ impl KrakenApi {
     /// ```ignore
     /// id = comma delimited list of ledger ids to query info about (20 maximum)
     /// ```
-    /// Result: associative array of led
+    /// Result: associative array of ledgers info
+    ///
+    /// ```ignore
+    /// <ledger_id> = ledger info.  See Get ledgers info
+    /// ```
+    pub fn query_ledgers(&mut 
