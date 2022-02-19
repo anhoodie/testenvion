@@ -754,4 +754,11 @@ impl KrakenApi {
     /// ```
     pub fn query_ledgers(&mut self, id: &str) -> Result<Map<String, Value>, error::Error> {
         let mut params = HashMap::new();
-        params.insert
+        params.insert("id", id);
+        self.private_query("QueryLedgers", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// 
