@@ -752,4 +752,6 @@ impl KrakenApi {
     /// ```ignore
     /// <ledger_id> = ledger info.  See Get ledgers info
     /// ```
-    pub fn query_ledgers(&mut 
+    pub fn query_ledgers(&mut self, id: &str) -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert
