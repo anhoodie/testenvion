@@ -761,4 +761,5 @@ impl KrakenApi {
     /// Input:
     ///
     /// ```ignore
-    /// 
+    /// pair = comma delimited list of asset pairs to get fee info on (optional)
+    /// fee-info = whether or not to includ
