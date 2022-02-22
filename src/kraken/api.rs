@@ -767,4 +767,6 @@ impl KrakenApi {
     /// Result: associative array
     ///
     /// ```ignore
-    /// currency = 
+    /// currency = volume currency
+    /// volume = current discount volume
+    /// fees = array of asset pairs and fee t
