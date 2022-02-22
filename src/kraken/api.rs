@@ -769,4 +769,6 @@ impl KrakenApi {
     /// ```ignore
     /// currency = volume currency
     /// volume = current discount volume
-    /// fees = array of asset pairs and fee t
+    /// fees = array of asset pairs and fee tier info (if requested)
+    ///     fee = current fee in percent
+    ///     minfee = minimum fee for pair (if not f
