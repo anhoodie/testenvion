@@ -773,4 +773,5 @@ impl KrakenApi {
     ///     fee = current fee in percent
     ///     minfee = minimum fee for pair (if not fixed fee)
     ///     maxfee = maximum fee for pair (if not fixed fee)
-    ///     nextfee = next tier's fee for
+    ///     nextfee = next tier's fee for pair (if not fixed fee.  nil if at lowest fee tier)
+    ///     nextvolume = volume level of next tier (if not fixe
