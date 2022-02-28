@@ -779,4 +779,6 @@ impl KrakenApi {
     /// fees_maker = array of asset pairs and maker fee tier info (if requested) for any pairs on
     ///             maker/taker schedule
     ///     fee = current fee in percent
-    ///     minfee = minimum fee for pair (if not f
+    ///     minfee = minimum fee for pair (if not fixed fee)
+    ///     maxfee = maximum fee for pair (if not fixed fee)
+    ///     nextfee = next tier's fee for pair (if not fixed fee.  
