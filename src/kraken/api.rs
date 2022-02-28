@@ -777,4 +777,6 @@ impl KrakenApi {
     ///     nextvolume = volume level of next tier (if not fixed fee.  nil if at lowest fee tier)
     ///     tiervolume = volume level of current tier (if not fixed fee.  nil if at lowest fee tier)
     /// fees_maker = array of asset pairs and maker fee tier info (if requested) for any pairs on
-  
+    ///             maker/taker schedule
+    ///     fee = current fee in percent
+    ///     minfee = minimum fee for pair (if not f
