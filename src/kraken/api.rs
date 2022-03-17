@@ -786,4 +786,7 @@ impl KrakenApi {
     ///     tiervolume = volume level of current tier (if not fixed fee.  nil if at lowest fee tier)
     /// ```
     /// Note: If an asset pair is on a maker/taker fee schedule, the taker side is given in "fees"
-    /// and maker side in "fe
+    /// and maker side in "fees_maker". For pairs not on maker/taker, they will only be given in
+    /// "fees".
+    pub fn get_trade_volume(&mut self,
+   
