@@ -785,4 +785,5 @@ impl KrakenApi {
     ///     nextvolume = volume level of next tier (if not fixed fee.  nil if at lowest fee tier)
     ///     tiervolume = volume level of current tier (if not fixed fee.  nil if at lowest fee tier)
     /// ```
-  
+    /// Note: If an asset pair is on a maker/taker fee schedule, the taker side is given in "fees"
+    /// and maker side in "fe
