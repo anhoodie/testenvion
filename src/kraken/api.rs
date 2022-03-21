@@ -794,4 +794,8 @@ impl KrakenApi {
                             -> Result<Map<String, Value>, error::Error> {
         let mut params = HashMap::new();
         params.insert("pair", pair);
-       
+        params.insert("fee-info", fee_info);
+        self.private_query("TradeVolume", &mut params)
+    }
+
+    // TODO: add optional closing 
