@@ -791,4 +791,7 @@ impl KrakenApi {
     pub fn get_trade_volume(&mut self,
                             pair: &str,
                             fee_info: &str)
-                            -> R
+                            -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("pair", pair);
+       
