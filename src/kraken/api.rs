@@ -789,4 +789,6 @@ impl KrakenApi {
     /// and maker side in "fees_maker". For pairs not on maker/taker, they will only be given in
     /// "fees".
     pub fn get_trade_volume(&mut self,
-   
+                            pair: &str,
+                            fee_info: &str)
+                            -> R
