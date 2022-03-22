@@ -804,4 +804,7 @@ impl KrakenApi {
     /// ```ignore
     /// pair = asset pair
     /// type = type of order (buy/sell)
-  
+    /// ordertype = order type:
+    ///     market
+    ///     limit (price = limit price)
+    ///     stop
