@@ -798,4 +798,10 @@ impl KrakenApi {
         self.private_query("TradeVolume", &mut params)
     }
 
-    // TODO: add optional closing 
+    // TODO: add optional closing order
+    /// Input:
+    ///
+    /// ```ignore
+    /// pair = asset pair
+    /// type = type of order (buy/sell)
+  
