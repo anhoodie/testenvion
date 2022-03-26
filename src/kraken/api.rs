@@ -807,4 +807,6 @@ impl KrakenApi {
     /// ordertype = order type:
     ///     market
     ///     limit (price = limit price)
-    ///     stop
+    ///     stop-loss (price = stop loss price)
+    ///     take-profit (price = take profit price)
+    ///     stop-lo
