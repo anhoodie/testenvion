@@ -812,4 +812,5 @@ impl KrakenApi {
     ///     stop-loss-profit (price = stop loss price, price2 = take profit price)
     ///     stop-loss-profit-limit (price = stop loss price, price2 = take profit price)
     ///     stop-loss-limit (price = stop loss trigger price, price2 = triggered limit price)
-    /
+    ///     take-profit-limit (price = take profit trigger price, price2 = triggered limit price)
+    ///     trailing-stop (price = trai
