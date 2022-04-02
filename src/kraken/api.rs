@@ -817,4 +817,5 @@ impl KrakenApi {
     ///     trailing-stop-limit (price = trailing stop offset, price2 = triggered limit offset)
     ///     stop-loss-and-limit (price = stop loss price, price2 = limit price)
     ///     settle-position
-    /// pric
+    /// price = price (optional.  dependent upon ordertype)
+    /// price2 = secondary price (optional.  dependent upon o
