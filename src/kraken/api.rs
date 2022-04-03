@@ -818,4 +818,6 @@ impl KrakenApi {
     ///     stop-loss-and-limit (price = stop loss price, price2 = limit price)
     ///     settle-position
     /// price = price (optional.  dependent upon ordertype)
-    /// price2 = secondary price (optional.  dependent upon o
+    /// price2 = secondary price (optional.  dependent upon ordertype)
+    /// volume = order volume in lots
+    /// leverage = amount of leverage desired (optional.  default = none)
