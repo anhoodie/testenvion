@@ -824,4 +824,6 @@ impl KrakenApi {
     /// oflags = comma delimited list of order flags (optional):
     ///     viqc = volume in quote currency (not available for leveraged orders)
     ///     fcib = prefer fee in base currency
-    ///     fciq = prefer fe
+    ///     fciq = prefer fee in quote currency
+    ///     nompp = no market price protection
+    ///     post = post only order (available when orde
