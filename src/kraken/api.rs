@@ -821,3 +821,5 @@ impl KrakenApi {
     /// price2 = secondary price (optional.  dependent upon ordertype)
     /// volume = order volume in lots
     /// leverage = amount of leverage desired (optional.  default = none)
+    /// oflags = comma delimited list of order flags (optional):
+    ///     viqc = volume in quote currency 
