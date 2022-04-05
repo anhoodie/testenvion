@@ -822,4 +822,6 @@ impl KrakenApi {
     /// volume = order volume in lots
     /// leverage = amount of leverage desired (optional.  default = none)
     /// oflags = comma delimited list of order flags (optional):
-    ///     viqc = volume in quote currency 
+    ///     viqc = volume in quote currency (not available for leveraged orders)
+    ///     fcib = prefer fee in base currency
+    ///     fciq = prefer fe
