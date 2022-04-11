@@ -829,4 +829,6 @@ impl KrakenApi {
     ///     post = post only order (available when ordertype = limit)
     /// starttm = scheduled start time (optional):
     ///     0 = now (default)
-    ///     
+    ///     +<n> = schedule start time <n> seconds from now
+    ///     <n> = unix timestamp of start time
+    /// expiretm = expiration 
