@@ -826,4 +826,7 @@ impl KrakenApi {
     ///     fcib = prefer fee in base currency
     ///     fciq = prefer fee in quote currency
     ///     nompp = no market price protection
-    ///     post = post only order (available when orde
+    ///     post = post only order (available when ordertype = limit)
+    /// starttm = scheduled start time (optional):
+    ///     0 = now (default)
+    ///     
