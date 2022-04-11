@@ -831,4 +831,7 @@ impl KrakenApi {
     ///     0 = now (default)
     ///     +<n> = schedule start time <n> seconds from now
     ///     <n> = unix timestamp of start time
-    /// expiretm = expiration 
+    /// expiretm = expiration time (optional):
+    ///     0 = no expiration (default)
+    ///     +<n> = expire <n> seconds from now
+    /// 
