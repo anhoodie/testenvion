@@ -836,4 +836,6 @@ impl KrakenApi {
     ///     +<n> = expire <n> seconds from now
     ///     <n> = unix timestamp of expiration time
     /// userref = user reference id.  32-bit signed number.  (optional)
- 
+    /// validate = validate inputs only.  do not submit order (optional)
+    ///
+    /// optional closing ord
