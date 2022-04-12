@@ -834,4 +834,6 @@ impl KrakenApi {
     /// expiretm = expiration time (optional):
     ///     0 = no expiration (default)
     ///     +<n> = expire <n> seconds from now
-    /// 
+    ///     <n> = unix timestamp of expiration time
+    /// userref = user reference id.  32-bit signed number.  (optional)
+ 
