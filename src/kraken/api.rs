@@ -838,4 +838,6 @@ impl KrakenApi {
     /// userref = user reference id.  32-bit signed number.  (optional)
     /// validate = validate inputs only.  do not submit order (optional)
     ///
-    /// optional closing ord
+    /// optional closing order to add to system when order gets filled:
+    ///     close[ordertype] = order type
+    ///     close[
