@@ -840,4 +840,10 @@ impl KrakenApi {
     ///
     /// optional closing order to add to system when order gets filled:
     ///     close[ordertype] = order type
-    ///     close[
+    ///     close[price] = price
+    ///     close[price2] = secondary price
+    /// ```
+    /// Result:
+    ///
+    /// ```ignore
+    /// descr 
