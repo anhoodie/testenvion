@@ -848,4 +848,6 @@ impl KrakenApi {
     /// ```ignore
     /// descr = order description info
     ///     order = order description
-    ///     close = conditional close order description (if co
+    ///     close = conditional close order description (if conditional close set)
+    /// txid = array of transaction ids for order (if order was added successfully)
+    /// Errors: 
