@@ -846,4 +846,6 @@ impl KrakenApi {
     /// Result:
     ///
     /// ```ignore
-    /// descr 
+    /// descr = order description info
+    ///     order = order description
+    ///     close = conditional close order description (if co
