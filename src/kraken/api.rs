@@ -850,4 +850,8 @@ impl KrakenApi {
     ///     order = order description
     ///     close = conditional close order description (if conditional close set)
     /// txid = array of transaction ids for order (if order was added successfully)
-    /// Errors: 
+    /// Errors: errors include (but are not limited to):
+    ///
+    /// EGeneral:Invalid arguments
+    /// EService:Unavailable
+    
