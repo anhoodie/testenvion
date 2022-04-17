@@ -854,4 +854,6 @@ impl KrakenApi {
     ///
     /// EGeneral:Invalid arguments
     /// EService:Unavailable
-    
+    /// ETrade:Invalid request
+    /// EOrder:Cannot open position
+    /// EOrder:Cannot open opposi
