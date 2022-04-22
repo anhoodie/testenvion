@@ -856,4 +856,7 @@ impl KrakenApi {
     /// EService:Unavailable
     /// ETrade:Invalid request
     /// EOrder:Cannot open position
-    /// EOrder:Cannot open opposi
+    /// EOrder:Cannot open opposing position
+    /// EOrder:Margin allowance exceeded
+    /// EOrder:Margin level too low
+    /// EOrder:Insufficient ma
