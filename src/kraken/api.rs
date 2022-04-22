@@ -859,4 +859,5 @@ impl KrakenApi {
     /// EOrder:Cannot open opposing position
     /// EOrder:Margin allowance exceeded
     /// EOrder:Margin level too low
-    /// EOrder:Insufficient ma
+    /// EOrder:Insufficient margin (exchange does not have sufficient funds to allow margin trading)
+    /// EOrder:Insuffici
