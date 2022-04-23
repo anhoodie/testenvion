@@ -870,4 +870,5 @@ impl KrakenApi {
     /// ```
     /// Note:
     ///
-    /// See Get tradable asset pairs for specifica
+    /// See Get tradable asset pairs for specifications on asset pair prices, lots, and leverage.
+    /// Prices can be preceded by +, -, or # to signify the pric
