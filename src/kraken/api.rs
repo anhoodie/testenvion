@@ -865,4 +865,9 @@ impl KrakenApi {
     /// EOrder:Orders limit exceeded
     /// EOrder:Positions limit exceeded
     /// EOrder:Rate limit exceeded
-    /// EOrder:Scheduled orders lim
+    /// EOrder:Scheduled orders limit exceeded
+    /// EOrder:Unknown position
+    /// ```
+    /// Note:
+    ///
+    /// See Get tradable asset pairs for specifica
