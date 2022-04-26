@@ -872,4 +872,6 @@ impl KrakenApi {
     ///
     /// See Get tradable asset pairs for specifications on asset pair prices, lots, and leverage.
     /// Prices can be preceded by +, -, or # to signify the price as a relative amount (with the
-    ///     exception of trailing stops, which are always relative). + adds t
+    ///     exception of trailing stops, which are always relative). + adds the amount to the
+    ///     current offered price. - subtracts the amount from the current offered price. # will
+    
