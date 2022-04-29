@@ -876,4 +876,6 @@ impl KrakenApi {
     ///     current offered price. - subtracts the amount from the current offered price. # will
     ///     either add or subtract the amount to the current offered price, depending on the type
     ///     and order type used. Relative prices can be suffixed with a % to signify the relative
-    ///     amount as a percentage of the offe
+    ///     amount as a percentage of the offered price.
+    /// For orders using leverage, 0 can be used for the volume to auto-fill the volume needed to
+    /// close out you
