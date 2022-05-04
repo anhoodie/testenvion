@@ -885,4 +885,7 @@ impl KrakenApi {
                               pair: &str,
                               type_order: &str,
                               ordertype: &str,
-                           
+                              price: &str,
+                              price2: &str,
+                              volume: &str,
+  
