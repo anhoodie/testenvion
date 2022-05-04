@@ -878,4 +878,6 @@ impl KrakenApi {
     ///     and order type used. Relative prices can be suffixed with a % to signify the relative
     ///     amount as a percentage of the offered price.
     /// For orders using leverage, 0 can be used for the volume to auto-fill the volume needed to
-    /// close out you
+    /// close out your position.
+    /// If you receive the error "EOrder:Trading agreement required", refer to your API key
+    //
