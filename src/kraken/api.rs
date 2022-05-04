@@ -880,4 +880,7 @@ impl KrakenApi {
     /// For orders using leverage, 0 can be used for the volume to auto-fill the volume needed to
     /// close out your position.
     /// If you receive the error "EOrder:Trading agreement required", refer to your API key
-    //
+    /// management page for further details.
+    pub fn add_standard_order(&mut self,
+                              pair: &str,
+           
