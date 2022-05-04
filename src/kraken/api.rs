@@ -883,4 +883,6 @@ impl KrakenApi {
     /// management page for further details.
     pub fn add_standard_order(&mut self,
                               pair: &str,
-           
+                              type_order: &str,
+                              ordertype: &str,
+                           
