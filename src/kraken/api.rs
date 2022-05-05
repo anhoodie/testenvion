@@ -888,4 +888,6 @@ impl KrakenApi {
                               price: &str,
                               price2: &str,
                               volume: &str,
-  
+                              leverage: &str,
+                              oflags: &str,
+                              start
