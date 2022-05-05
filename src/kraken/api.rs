@@ -890,4 +890,7 @@ impl KrakenApi {
                               volume: &str,
                               leverage: &str,
                               oflags: &str,
-                              start
+                              starttm: &str,
+                              expiretm: &str,
+                              userref: &str,
+                
