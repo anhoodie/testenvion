@@ -893,4 +893,5 @@ impl KrakenApi {
                               starttm: &str,
                               expiretm: &str,
                               userref: &str,
-                
+                              validate: &str)
+                              -> Result<Map<String, Value>, error::E
