@@ -897,4 +897,7 @@ impl KrakenApi {
                               -> Result<Map<String, Value>, error::Error> {
         let mut params = HashMap::new();
         params.insert("pair", pair);
-        params.insert("type", type_order)
+        params.insert("type", type_order);
+        params.insert("ordertype", ordertype);
+        params.insert("price", price);
+        params.insert("price2", price
