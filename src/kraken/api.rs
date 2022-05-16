@@ -894,4 +894,7 @@ impl KrakenApi {
                               expiretm: &str,
                               userref: &str,
                               validate: &str)
-                              -> Result<Map<String, Value>, error::E
+                              -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("pair", pair);
+        params.insert("type", type_order)
