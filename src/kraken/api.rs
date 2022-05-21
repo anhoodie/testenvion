@@ -900,4 +900,7 @@ impl KrakenApi {
         params.insert("type", type_order);
         params.insert("ordertype", ordertype);
         params.insert("price", price);
-        params.insert("price2", price
+        params.insert("price2", price2);
+        params.insert("volume", volume);
+        params.insert("leverage", leverage);
+        params.in
