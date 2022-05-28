@@ -903,4 +903,7 @@ impl KrakenApi {
         params.insert("price2", price2);
         params.insert("volume", volume);
         params.insert("leverage", leverage);
-        params.in
+        params.insert("oflags", oflags);
+        params.insert("starttm", starttm);
+        params.insert("expiretm", expiretm);
+        params
