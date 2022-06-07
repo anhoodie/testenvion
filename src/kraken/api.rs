@@ -908,4 +908,14 @@ impl KrakenApi {
         params.insert("expiretm", expiretm);
         params.insert("userref", userref);
         params.insert("validate", validate);
-        self.private_query("AddOrder", &mut para
+        self.private_query("AddOrder", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// txid = transaction id
+    /// ```
+    /// Result:
+    ///
+    /// ```ignore
