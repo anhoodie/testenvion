@@ -906,4 +906,6 @@ impl KrakenApi {
         params.insert("oflags", oflags);
         params.insert("starttm", starttm);
         params.insert("expiretm", expiretm);
-        params
+        params.insert("userref", userref);
+        params.insert("validate", validate);
+        self.private_query("AddOrder", &mut para
