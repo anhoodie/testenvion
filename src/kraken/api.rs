@@ -919,3 +919,7 @@ impl KrakenApi {
     /// Result:
     ///
     /// ```ignore
+    /// count = number of orders canceled
+    /// pending = if set, order(s) is/are pending cancellation
+    /// ```
+    /// 
