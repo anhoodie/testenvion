@@ -922,4 +922,5 @@ impl KrakenApi {
     /// count = number of orders canceled
     /// pending = if set, order(s) is/are pending cancellation
     /// ```
-    /// 
+    /// Note: txid may be a user reference id.
+    pub fn cancel_open_order(&mut self, txid: &str) -> Result<Map<String, Value>, error::Error
