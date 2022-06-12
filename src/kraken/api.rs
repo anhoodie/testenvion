@@ -923,4 +923,7 @@ impl KrakenApi {
     /// pending = if set, order(s) is/are pending cancellation
     /// ```
     /// Note: txid may be a user reference id.
-    pub fn cancel_open_order(&mut self, txid: &str) -> Result<Map<String, Value>, error::Error
+    pub fn cancel_open_order(&mut self, txid: &str) -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("txid", txid);
+        self.private_query("CancelOr
