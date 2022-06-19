@@ -926,4 +926,11 @@ impl KrakenApi {
     pub fn cancel_open_order(&mut self, txid: &str) -> Result<Map<String, Value>, error::Error> {
         let mut params = HashMap::new();
         params.insert("txid", txid);
-        self.private_query("CancelOr
+        self.private_query("CancelOrder", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// aclass = asset class (optional):
+    ///     cu
