@@ -937,3 +937,7 @@ impl KrakenApi {
     /// asset = asset being deposited
     /// ```
     /// Result: associative array of deposit methods:
+    ///
+    /// ```ignore
+    /// method = name of deposit method
+    /// limit = maximum net amount that can be deposited
