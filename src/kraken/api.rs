@@ -933,4 +933,7 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// aclass = asset class (optional):
-    ///     cu
+    ///     currency (default)
+    /// asset = asset being deposited
+    /// ```
+    /// Result: associative array of deposit methods:
