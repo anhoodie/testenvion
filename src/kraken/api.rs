@@ -940,4 +940,6 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// method = name of deposit method
-    /// limit = maximum net amount that can be deposited
+    /// limit = maximum net amount that can be deposited right now, or false if no limit
+    /// fee = amount of fees that will be paid
+    /// address-setup-fee = whether or not met
