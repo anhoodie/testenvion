@@ -942,4 +942,6 @@ impl KrakenApi {
     /// method = name of deposit method
     /// limit = maximum net amount that can be deposited right now, or false if no limit
     /// fee = amount of fees that will be paid
-    /// address-setup-fee = whether or not met
+    /// address-setup-fee = whether or not method has an address setup fee (optional)
+    /// ```
+    pub fn get_deposit_methods(&mut se
