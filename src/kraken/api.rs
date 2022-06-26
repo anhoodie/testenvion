@@ -944,4 +944,7 @@ impl KrakenApi {
     /// fee = amount of fees that will be paid
     /// address-setup-fee = whether or not method has an address setup fee (optional)
     /// ```
-    pub fn get_deposit_methods(&mut se
+    pub fn get_deposit_methods(&mut self,
+                               aclass: &str,
+                               asset: &str)
+                               -
