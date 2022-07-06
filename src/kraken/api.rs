@@ -947,4 +947,6 @@ impl KrakenApi {
     pub fn get_deposit_methods(&mut self,
                                aclass: &str,
                                asset: &str)
-                               -
+                               -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("aclass",
