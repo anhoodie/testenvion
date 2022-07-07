@@ -954,4 +954,10 @@ impl KrakenApi {
         self.private_query("DepositMethods", &mut params)
     }
 
-    /// In
+    /// Input:
+    ///
+    /// ```ignore
+    /// aclass = asset class (optional):
+    ///     currency (default)
+    /// asset = asset being deposited
+    /// meth
