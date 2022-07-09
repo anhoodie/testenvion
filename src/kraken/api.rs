@@ -960,4 +960,7 @@ impl KrakenApi {
     /// aclass = asset class (optional):
     ///     currency (default)
     /// asset = asset being deposited
-    /// meth
+    /// method = name of the deposit method
+    /// new = whether or not to generate a new address (optional.  default = false)
+    /// ```
+   
