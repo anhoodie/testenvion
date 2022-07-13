@@ -963,4 +963,8 @@ impl KrakenApi {
     /// method = name of the deposit method
     /// new = whether or not to generate a new address (optional.  default = false)
     /// ```
-   
+    /// Result: associative array of deposit addresses:
+    ///
+    /// ```ignore
+    /// address = deposit address
+    /// e
