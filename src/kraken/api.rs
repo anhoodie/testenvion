@@ -968,4 +968,8 @@ impl KrakenApi {
     /// ```ignore
     /// address = deposit address
     /// expiretm = expiration time in unix timestamp, or 0 if not expiring
-    /// new = whether or not address has e
+    /// new = whether or not address has ever been used
+    /// ```
+    pub fn get_deposit_addresses(&mut self,
+                                 aclass: &str,
+      
