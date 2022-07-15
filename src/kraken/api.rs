@@ -967,4 +967,5 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// address = deposit address
-    /// e
+    /// expiretm = expiration time in unix timestamp, or 0 if not expiring
+    /// new = whether or not address has e
