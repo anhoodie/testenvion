@@ -972,4 +972,6 @@ impl KrakenApi {
     /// ```
     pub fn get_deposit_addresses(&mut self,
                                  aclass: &str,
-      
+                                 asset: &str,
+                                 method: &str,
+                                 new: &str)
