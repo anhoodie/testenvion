@@ -975,3 +975,5 @@ impl KrakenApi {
                                  asset: &str,
                                  method: &str,
                                  new: &str)
+                                 -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap:
