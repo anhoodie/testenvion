@@ -979,4 +979,8 @@ impl KrakenApi {
         let mut params = HashMap::new();
         params.insert("aclass", aclass);
         params.insert("asset", asset);
-        params.insert("me
+        params.insert("method", method);
+        params.insert("new", new);
+        self.private_query("DepositAddresses", &mut params)
+    }
+
