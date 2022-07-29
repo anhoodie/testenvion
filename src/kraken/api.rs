@@ -984,3 +984,9 @@ impl KrakenApi {
         self.private_query("DepositAddresses", &mut params)
     }
 
+    /// Input:
+    ///
+    /// ```ignore
+    /// aclass = asset class (optional):
+    ///     currency (default)
+    /// asse
