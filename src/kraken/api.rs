@@ -992,4 +992,9 @@ impl KrakenApi {
     /// asset = asset being deposited
     /// method = name of the deposit method
     /// ```
-    /// Result: array of array deposit status
+    /// Result: array of array deposit status information:
+    ///
+    /// ```ignore
+    /// method = name of the deposit method used
+    /// aclass = asset class
+    ///
