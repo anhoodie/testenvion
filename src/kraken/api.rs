@@ -997,4 +997,7 @@ impl KrakenApi {
     /// ```ignore
     /// method = name of the deposit method used
     /// aclass = asset class
-    ///
+    /// asset = asset X-ISO4217-A3 code
+    /// refid = reference id
+    /// txid = method transaction id
+    /// info =
