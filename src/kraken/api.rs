@@ -1003,4 +1003,6 @@ impl KrakenApi {
     /// info = method transaction information
     /// amount = amount deposited
     /// fee = fees paid
-    /// time = unix ti
+    /// time = unix timestamp when request was made
+    /// status = status of deposit
+    /// status-prop = additional status properties (if availa
