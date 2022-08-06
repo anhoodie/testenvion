@@ -1005,4 +1005,7 @@ impl KrakenApi {
     /// fee = fees paid
     /// time = unix timestamp when request was made
     /// status = status of deposit
-    /// status-prop = additional status properties (if availa
+    /// status-prop = additional status properties (if available)
+    ///     return = a return transaction initiated by Kraken
+    ///     onhold = deposit is on hold pending review
+ 
