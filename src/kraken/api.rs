@@ -1012,4 +1012,6 @@ impl KrakenApi {
     /// For information about the status, please refer to the IFEX financial transaction states.
     pub fn get_status_of_recent_deposits(&mut self,
                                          aclass: &str,
-                          
+                                         asset: &str,
+                                         method: &str)
+                                
