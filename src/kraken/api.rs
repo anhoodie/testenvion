@@ -1019,4 +1019,10 @@ impl KrakenApi {
         params.insert("aclass", aclass);
         params.insert("asset", asset);
         params.insert("method", method);
-        self.private_query("Deposit
+        self.private_query("DepositStatus", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// aclass = asset class (
