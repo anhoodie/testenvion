@@ -1028,4 +1028,8 @@ impl KrakenApi {
     /// aclass = asset class (optional):
     ///     currency (default)
     /// asset = asset being withdrawn
-    /// key = withdrawal key name, as s
+    /// key = withdrawal key name, as set up on your account
+    /// amount = amount to withdraw
+    /// ```
+    /// Result: associative array of withdrawal info:
+    ///
