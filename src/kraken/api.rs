@@ -1025,4 +1025,7 @@ impl KrakenApi {
     /// Input:
     ///
     /// ```ignore
-    /// aclass = asset class (
+    /// aclass = asset class (optional):
+    ///     currency (default)
+    /// asset = asset being withdrawn
+    /// key = withdrawal key name, as s
