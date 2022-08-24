@@ -1033,3 +1033,6 @@ impl KrakenApi {
     /// ```
     /// Result: associative array of withdrawal info:
     ///
+    /// ```ignore
+    /// method = name of the withdrawal method that will be used
+    /// limit = maximum net amount that can 
