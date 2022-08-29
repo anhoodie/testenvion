@@ -1035,4 +1035,8 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// method = name of the withdrawal method that will be used
-    /// limit = maximum net amount that can 
+    /// limit = maximum net amount that can be withdrawn right now
+    /// fee = amount of fees that will be paid
+    /// ```
+    pub fn get_withdrawal_information(&mut self,
+      
