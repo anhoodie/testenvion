@@ -1039,4 +1039,6 @@ impl KrakenApi {
     /// fee = amount of fees that will be paid
     /// ```
     pub fn get_withdrawal_information(&mut self,
-      
+                                      aclass: &str,
+                                      asset: &str,
+                                 
