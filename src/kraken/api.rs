@@ -1041,4 +1041,6 @@ impl KrakenApi {
     pub fn get_withdrawal_information(&mut self,
                                       aclass: &str,
                                       asset: &str,
-                                 
+                                      key: &str,
+                                      amount: &str)
+                                      -> Result<Map<S
