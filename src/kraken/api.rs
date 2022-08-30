@@ -1048,4 +1048,10 @@ impl KrakenApi {
         params.insert("aclass", aclass);
         params.insert("asset", asset);
         params.insert("key", key);
-        params.inser
+        params.insert("amount", amount);
+        self.private_query("WithdrawInfo", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
