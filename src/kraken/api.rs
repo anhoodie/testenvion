@@ -1060,4 +1060,9 @@ impl KrakenApi {
     /// asset = asset being withdrawn
     /// key = withdrawal key name, as set up on your account
     /// amount = amount to withdraw, including fees
- 
+    /// ```
+    /// Result: associative array of withdrawal transaction:
+    ///
+    /// ```ignore
+    /// refid = reference id
+    /// ``
