@@ -1065,4 +1065,8 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// refid = reference id
-    /// ``
+    /// ```
+    pub fn withdraw_funds(&mut self,
+                          aclass: &str,
+                          asset: &str,
+               
