@@ -1069,4 +1069,6 @@ impl KrakenApi {
     pub fn withdraw_funds(&mut self,
                           aclass: &str,
                           asset: &str,
-               
+                          key: &str,
+                          amount: &str)
+                          -> Result<Map<String, Value>, error:
