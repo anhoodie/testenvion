@@ -1086,4 +1086,8 @@ impl KrakenApi {
     /// aclass = asset class (optional):
     ///     currency (default)
     /// asset = asset being withdrawn
-    /// method = withdrawal
+    /// method = withdrawal method name (optional)
+    /// ```
+    /// Result: array of array withdrawal status information:
+    ///
+    /
