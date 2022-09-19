@@ -1090,4 +1090,7 @@ impl KrakenApi {
     /// ```
     /// Result: array of array withdrawal status information:
     ///
-    /
+    /// ```ignore
+    /// method = name of the withdrawal method used
+    /// aclass = asset class
+    /// asset = asset X-ISO4
