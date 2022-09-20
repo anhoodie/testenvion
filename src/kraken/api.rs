@@ -1102,4 +1102,7 @@ impl KrakenApi {
     /// time = unix timestamp when request was made
     /// status = status of withdrawal
     /// status-prop = additional status properties (if available)
-    ///     cancel-pending = canc
+    ///     cancel-pending = cancelation requested
+    ///     canceled = canceled
+    ///     cancel-denied = cancelation requested but was denied
+    ///   
