@@ -1096,4 +1096,8 @@ impl KrakenApi {
     /// asset = asset X-ISO4217-A3 code
     /// refid = reference id
     /// txid = method transaction id
-    /// info = method transaction infor
+    /// info = method transaction information
+    /// amount = amount withdrawn
+    /// fee = fees paid
+    /// time = unix timestamp when request was made
+    /// status = st
