@@ -1100,4 +1100,6 @@ impl KrakenApi {
     /// amount = amount withdrawn
     /// fee = fees paid
     /// time = unix timestamp when request was made
-    /// status = st
+    /// status = status of withdrawal
+    /// status-prop = additional status properties (if available)
+    ///     cancel-pending = canc
