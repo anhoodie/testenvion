@@ -1106,4 +1106,7 @@ impl KrakenApi {
     ///     canceled = canceled
     ///     cancel-denied = cancelation requested but was denied
     ///     return = a return transaction initiated by Kraken; it cannot be canceled
-    ///     onhold = withdrawal is on hold pendin
+    ///     onhold = withdrawal is on hold pending review
+    /// ```
+    /// For information about the status, please refer to the IFEX financial transaction states.
+    pub fn get_status_
