@@ -1109,4 +1109,6 @@ impl KrakenApi {
     ///     onhold = withdrawal is on hold pending review
     /// ```
     /// For information about the status, please refer to the IFEX financial transaction states.
-    pub fn get_status_
+    pub fn get_status_of_recent_withdrawals(&mut self,
+                                            aclass: &str,
+                      
