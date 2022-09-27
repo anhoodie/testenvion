@@ -1105,4 +1105,5 @@ impl KrakenApi {
     ///     cancel-pending = cancelation requested
     ///     canceled = canceled
     ///     cancel-denied = cancelation requested but was denied
-    ///   
+    ///     return = a return transaction initiated by Kraken; it cannot be canceled
+    ///     onhold = withdrawal is on hold pendin
