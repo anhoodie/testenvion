@@ -1118,4 +1118,11 @@ impl KrakenApi {
         params.insert("aclass", aclass);
         params.insert("asset", asset);
         params.insert("method", method);
-        self.private_query("Withdraw
+        self.private_query("WithdrawStatus", &mut params)
+    }
+
+    /// Input:
+    ///
+    /// ```ignore
+    /// aclass = asset class (optional):
+    ///     
