@@ -1125,4 +1125,8 @@ impl KrakenApi {
     ///
     /// ```ignore
     /// aclass = asset class (optional):
-    ///     
+    ///     currency (default)
+    /// asset = asset being withdrawn
+    /// refid = withdrawal reference id
+    /// ```
+   
