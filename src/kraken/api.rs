@@ -1129,4 +1129,9 @@ impl KrakenApi {
     /// asset = asset being withdrawn
     /// refid = withdrawal reference id
     /// ```
-   
+    /// Result:
+    /// ```ignore
+    /// true on success
+    /// ```
+    ///
+    /// Note: Cancelation cannot be guaranteed. Th
