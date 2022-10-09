@@ -1135,4 +1135,7 @@ impl KrakenApi {
     /// ```
     ///
     /// Note: Cancelation cannot be guaranteed. This will put in a cancelation request. Depending
-    /// upon how far along the withdrawal process is, it may not be
+    /// upon how far along the withdrawal process is, it may not be possible to cancel the
+    /// withdrawal.
+    pub fn request_withdrawal_cancelation(&mut self,
+          
