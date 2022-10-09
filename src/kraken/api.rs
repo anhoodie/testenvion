@@ -1134,4 +1134,5 @@ impl KrakenApi {
     /// true on success
     /// ```
     ///
-    /// Note: Cancelation cannot be guaranteed. Th
+    /// Note: Cancelation cannot be guaranteed. This will put in a cancelation request. Depending
+    /// upon how far along the withdrawal process is, it may not be
