@@ -1140,4 +1140,6 @@ impl KrakenApi {
     pub fn request_withdrawal_cancelation(&mut self,
                                           aclass: &str,
                                           asset: &str,
-                      
+                                          refid: &str)
+                                          -> Result<Map<String, Value>, error::Error> {
+     
