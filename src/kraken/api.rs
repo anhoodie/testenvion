@@ -1142,4 +1142,7 @@ impl KrakenApi {
                                           asset: &str,
                                           refid: &str)
                                           -> Result<Map<String, Value>, error::Error> {
-     
+        let mut params = HashMap::new();
+        params.insert("aclass", aclass);
+        params.insert("asset", asset);
+        
