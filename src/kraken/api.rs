@@ -1138,4 +1138,6 @@ impl KrakenApi {
     /// upon how far along the withdrawal process is, it may not be possible to cancel the
     /// withdrawal.
     pub fn request_withdrawal_cancelation(&mut self,
-          
+                                          aclass: &str,
+                                          asset: &str,
+                      
