@@ -1145,4 +1145,7 @@ impl KrakenApi {
         let mut params = HashMap::new();
         params.insert("aclass", aclass);
         params.insert("asset", asset);
-        
+        params.insert("refid", refid);
+        self.private_query("WithdrawCancel", &mut params)
+    }
+}
