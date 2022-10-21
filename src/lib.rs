@@ -15,4 +15,5 @@
 //!
 //! # WARNING
 //! This library is highly experimental at the moment. Please do not invest what you
-//! can't 
+//! can't afford to loose. This is a personal project, I can not be held responsible for
+//! the library malfunction, which ca
