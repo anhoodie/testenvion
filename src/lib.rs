@@ -22,4 +22,9 @@
 extern crate hyper;
 extern crate crypto;
 extern crate hyper_native_tls;
-exte
+extern crate rustc_serialize;
+extern crate serde_json;
+extern crate time;
+#[macro_use]
+extern crate lazy_static;
+extern c
