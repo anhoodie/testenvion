@@ -36,4 +36,6 @@ pub mod pair;
 pub mod types;
 mod helpers;
 
-pub mod bitst
+pub mod bitstamp;
+pub mod poloniex;
+pub mod kraken;
