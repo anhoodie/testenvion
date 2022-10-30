@@ -27,4 +27,13 @@ extern crate serde_json;
 extern crate time;
 #[macro_use]
 extern crate lazy_static;
-extern c
+extern crate bidir_map;
+
+pub mod coinnect;
+pub mod exchange;
+pub mod error;
+pub mod pair;
+pub mod types;
+mod helpers;
+
+pub mod bitst
