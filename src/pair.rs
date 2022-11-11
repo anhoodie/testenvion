@@ -10,4 +10,14 @@
 pub enum Pair {
     BTC_AMP,
     BTC_ARDR,
+    BTC_BBR,
+    BTC_BCN,
+    BTC_BCY,
+    BTC_BELA,
+    BTC_BITS,
+    BTC_BLK,
+    BTC_BTCD,
+    BTC_BTM,
+    BTC_BTS,
+    BTC_BURST,
  
