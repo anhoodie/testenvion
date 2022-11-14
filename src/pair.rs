@@ -29,4 +29,13 @@ pub enum Pair {
     BTC_DCR,
     BTC_DGB,
     BTC_DOGE,
-    B
+    BTC_EMC2,
+    BTC_ETC,
+    BTC_ETH,
+    BTC_EUR_d,
+    BTC_EUR,
+    BTC_EXP,
+    BTC_FCT,
+    BTC_FLDC,
+    BTC_FLO,
+    BTC_GA
