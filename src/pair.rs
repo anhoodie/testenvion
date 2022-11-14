@@ -38,4 +38,14 @@ pub enum Pair {
     BTC_FCT,
     BTC_FLDC,
     BTC_FLO,
-    BTC_GA
+    BTC_GAME,
+    BTC_GBP_d,
+    BTC_GBP,
+    BTC_GNT,
+    BTC_GRC,
+    BTC_HUC,
+    BTC_HZ,
+    BTC_IOC,
+    BTC_JPY_d,
+    BTC_JPY,
+ 
