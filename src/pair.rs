@@ -20,4 +20,13 @@ pub enum Pair {
     BTC_BTM,
     BTC_BTS,
     BTC_BURST,
- 
+    BTC_C2,
+    BTC_CAD_d,
+    BTC_CAD,
+    BTC_CLAM,
+    BTC_CURE,
+    BTC_DASH,
+    BTC_DCR,
+    BTC_DGB,
+    BTC_DOGE,
+    B
