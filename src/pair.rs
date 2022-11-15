@@ -48,4 +48,13 @@ pub enum Pair {
     BTC_IOC,
     BTC_JPY_d,
     BTC_JPY,
+    BTC_LBC,
+    BTC_LSK,
+    BTC_LTC,
+    BTC_MAID,
+    BTC_MYR,
+    BTC_NAUT,
+    BTC_NAV,
+    BTC_NEOS,
+    BTC_NMC,
  
