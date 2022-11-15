@@ -57,4 +57,11 @@ pub enum Pair {
     BTC_NAV,
     BTC_NEOS,
     BTC_NMC,
- 
+    BTC_NOBL,
+    BTC_NOTE,
+    BTC_NSR,
+    BTC_NXC,
+    BTC_NXT,
+    BTC_OMNI,
+    BTC_PASC,
+    BTC_PI
