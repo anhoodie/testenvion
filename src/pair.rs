@@ -64,4 +64,14 @@ pub enum Pair {
     BTC_NXT,
     BTC_OMNI,
     BTC_PASC,
-    BTC_PI
+    BTC_PINK,
+    BTC_POT,
+    BTC_PPC,
+    BTC_QBK,
+    BTC_QORA,
+    BTC_QTL,
+    BTC_RADS,
+    BTC_RBY,
+    BTC_REP,
+    BTC_RIC,
+   
