@@ -90,4 +90,13 @@ pub enum Pair {
     BTC_VRC,
     BTC_VTC,
     BTC_XBC,
-    BTC_XC
+    BTC_XCP,
+    BTC_XEM,
+    BTC_XMG,
+    BTC_XMR,
+    BTC_XPM,
+    BTC_XRP,
+    BTC_XVC,
+    BTC_ZEC,
+    DASH_BTC,
+    E
