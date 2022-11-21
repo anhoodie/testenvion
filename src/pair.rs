@@ -82,4 +82,12 @@ pub enum Pair {
     BTC_STR,
     BTC_STRAT,
     BTC_SYS,
-    BTC
+    BTC_UNITY,
+    BTC_USD_d,
+    BTC_USD,
+    BTC_VIA,
+    BTC_VOX,
+    BTC_VRC,
+    BTC_VTC,
+    BTC_XBC,
+    BTC_XC
