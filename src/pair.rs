@@ -74,4 +74,12 @@ pub enum Pair {
     BTC_RBY,
     BTC_REP,
     BTC_RIC,
-   
+    BTC_SBD,
+    BTC_SC,
+    BTC_SDC,
+    BTC_SJCX,
+    BTC_STEEM,
+    BTC_STR,
+    BTC_STRAT,
+    BTC_SYS,
+    BTC
