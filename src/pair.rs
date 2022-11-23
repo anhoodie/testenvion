@@ -99,4 +99,12 @@ pub enum Pair {
     BTC_XVC,
     BTC_ZEC,
     DASH_BTC,
-    E
+    ETC_BTC,
+    ETC_ETH,
+    ETC_EUR,
+    ETC_USD,
+    ETH_BTC,
+    ETH_CAD_d,
+    ETH_CAD,
+    ETH_ETC,
+    
