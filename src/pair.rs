@@ -107,4 +107,13 @@ pub enum Pair {
     ETH_CAD_d,
     ETH_CAD,
     ETH_ETC,
+    ETH_EUR_d,
+    ETH_EUR,
+    ETH_GBP_d,
+    ETH_GBP,
+    ETH_GNT,
+    ETH_JPY_d,
+    ETH_JPY,
+    ETH_LSK,
+    ETH_REP,
     
