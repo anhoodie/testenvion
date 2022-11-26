@@ -116,4 +116,13 @@ pub enum Pair {
     ETH_JPY,
     ETH_LSK,
     ETH_REP,
-    
+    ETH_STEEM,
+    ETH_USD_d,
+    ETH_USD,
+    ETH_XBT_d,
+    ETH_ZEC,
+    EUR_USD,
+    ICN_BTC,
+    ICN_ETH,
+    LTC_BTC,
+ 
