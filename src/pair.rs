@@ -125,4 +125,13 @@ pub enum Pair {
     ICN_BTC,
     ICN_ETH,
     LTC_BTC,
- 
+    LTC_EUR,
+    LTC_USD,
+    MLN_BTC,
+    MLN_ETH,
+    REP_BTC,
+    REP_ETH,
+    REP_EUR,
+    REP_USD,
+    USDT_BTC,
+    
