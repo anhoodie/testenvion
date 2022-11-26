@@ -134,4 +134,11 @@ pub enum Pair {
     REP_EUR,
     REP_USD,
     USDT_BTC,
-    
+    USDT_DASH,
+    USDT_ETC,
+    USDT_ETH,
+    USDT_LTC,
+    USDT_NXT,
+    USDT_REP,
+    USDT_STR,
+    USDT_U
