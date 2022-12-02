@@ -141,4 +141,14 @@ pub enum Pair {
     USDT_NXT,
     USDT_REP,
     USDT_STR,
-    USDT_U
+    USDT_USD,
+    USDT_XMR,
+    USDT_XRP,
+    USDT_ZEC,
+    XDG_BTC,
+    XLM_BTC,
+    XLM_EUR,
+    XLM_USD,
+    XMR_BBR,
+    XMR_BCN,
+    X
