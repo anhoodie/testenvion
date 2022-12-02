@@ -151,4 +151,12 @@ pub enum Pair {
     XLM_USD,
     XMR_BBR,
     XMR_BCN,
-    X
+    XMR_BLK,
+    XMR_BTC,
+    XMR_BTCD,
+    XMR_DASH,
+    XMR_EUR,
+    XMR_LTC,
+    XMR_MAID,
+    XMR_NXT,
+    XMR_QORA,
