@@ -160,3 +160,12 @@ pub enum Pair {
     XMR_MAID,
     XMR_NXT,
     XMR_QORA,
+    XMR_USD,
+    XMR_ZEC,
+    XRP_BTC,
+    XRP_EUR,
+    XRP_USD,
+    ZEC_BTC,
+    ZEC_EUR,
+    ZEC_USD,
+}
