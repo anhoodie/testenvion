@@ -246,3 +246,126 @@ impl PoloniexApi {
         let mut params = HashMap::new();
         params.insert("currencyPair", currency_pair);
         params.insert("start", start);
+        params.insert("end", end);
+        params.insert("period", period);
+        self.public_query("returnChartData", &params)
+    }
+
+    /// Sample output :
+    ///
+    /// ```ignore
+    /// {"1CR":{"maxDailyWithdrawal":10000,"txFee":0.01,"minConf":3,"disabled":0},
+    /// "ABY":{"maxDailyWithdrawal":10000000,"txFee":0.01,"minConf":8,"disabled":0}, ... }
+    /// ```
+    pub fn return_currencies(&mut self) -> Result<Map<String, Value>, error::Error> {
+        let params = HashMap::new();
+        self.public_query("returnCurrencies", &params)
+    }
+
+    /// Sample output :
+    ///
+    /// ```ignore
+    /// {"offers":[{"rate":"0.00200000","amount":"64.66305732","rangeMin":2,"rangeMax":8}, ... ],
+    /// "demands":[{"rate":"0.00170000","amount":"26.54848841","rangeMin":2,"rangeMax":2}, ... ]}
+    /// ```
+    pub fn return_loan_orders(&mut self,
+                              currency: &str)
+                              -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("currency", currency);
+        self.public_query("returnLoanOrders", &params)
+    }
+
+    /// Returns all of your available balances.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"BTC":"0.59098578","LTC":"3.31117268", ... }
+    /// ```
+    pub fn return_balances(&mut self) -> Result<Map<String, Value>, error::Error> {
+        let params = HashMap::new();
+        self.private_query("returnBalances", &params)
+    }
+
+    /// Returns all of your balances, including available balance, balance on orders,
+    /// and the estimated BTC value of your balance. By default, this call is limited to your
+    /// exchange account; set the "account" POST parameter to "all" to include your margin and
+    /// lending accounts.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"LTC":{"available":"5.015","onOrders":"1.0025","btcValue":"0.078"},"NXT":{...}, ... }
+    /// ```
+    pub fn return_complete_balances(&mut self) -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("account", "all");
+        self.private_query("returnCompleteBalances", &params)
+    }
+
+    /// Returns all of your deposit addresses.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"BTC":"19YqztHmspv2egyD6jQM3yn81x5t5krVdJ","LTC":"LPgf9kjv9H1Vuh4XSaKhzBe8JHdou1WgUB",
+    /// ... "ITC":"Press Generate.." ... }
+    /// ```
+    pub fn return_deposit_addresses(&mut self) -> Result<Map<String, Value>, error::Error> {
+        let params = HashMap::new();
+        self.private_query("returnDepositAddresses", &params)
+    }
+
+    /// Generates a new deposit address for the currency specified by the "currency" POST parameter.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"success":1,"response":"CKXbbs8FAVbtEa397gJHSutmrdrBrhUMxe"}
+    /// ```
+    pub fn generate_new_address(&mut self,
+                                currency: &str)
+                                -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("currency", currency);
+        self.private_query("generateNewAddress", &params)
+    }
+
+    /// Returns your deposit and withdrawal history within a range, specified by the "start" and
+    /// "end" POST parameters,
+    /// both of which should be given as UNIX timestamps.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"deposits":
+    /// [{"currency":"BTC","address":"...","amount":"0.01006132","confirmations":10,
+    /// "txid":"17f819a91369a9ff6c4a34216d434597cfc1b4a3d0489b46bd6f924137a47701",
+    /// "timestamp":1399305798,"status":"COMPLETE"},
+    /// {"currency":"BTC","address":"...","amount":"0.00404104","confirmations":10,
+    /// "txid":"7acb90965b252e55a894b535ef0b0b65f45821f2899e4a379d3e43799604695c",
+    /// "timestamp":1399245916,"status":"COMPLETE"}],
+    /// "withdrawals":[{"withdrawalNumber":134933,"currency":"BTC",
+    /// "address":"1N2i5n8DwTGzUq2Vmn9TUL8J1vdr1XBDFg","amount":"5.00010000",
+    /// "timestamp":1399267904,
+    /// "status":"COMPLETE: 36e483efa6aff9fd53a235177579d98451c4eb237c210e66cd2b9a2d4a988f8e",
+    /// "ipAddress":"..."}]}
+    /// ```
+    pub fn return_deposits_withdrawals(&mut self,
+                                       start: &str,
+                                       end: &str)
+                                       -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("start", start);
+        params.insert("end", end);
+        self.private_query("returnDepositsWithdrawals", &params)
+    }
+
+    ///Returns your open orders for a given market, specified by the "currencyPair" POST parameter,
+    /// e.g. "BTC_XCP". Set "currencyPair" to "all" to return open orders for all markets.
+    ///
+    /// Sample output for single market:
+    ///
+    /// ```ignore
+    /// [{"orderNumber":"120466","type":"sell","rate":"0.025","amount":"100","total":"2.5"},
