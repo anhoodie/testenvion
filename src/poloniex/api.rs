@@ -369,3 +369,127 @@ impl PoloniexApi {
     ///
     /// ```ignore
     /// [{"orderNumber":"120466","type":"sell","rate":"0.025","amount":"100","total":"2.5"},
+    /// {"orderNumber":"120467","type":"sell","rate":"0.04","amount":"100","total":"4"}, ... ]
+    /// ```
+    ///
+    /// ```ignore
+    /// Or, for all markets:
+    /// {"BTC_1CR":[],"BTC_AC":[{"orderNumber":"120466","type":"sell","rate":"0.025",
+    /// "amount":"100","total":"2.5"},
+    /// {"orderNumber":"120467","type":"sell","rate":"0.04","amount":"100","total":"4"}], ... }
+    /// ```
+    pub fn return_open_orders(&mut self,
+                              currency_pair: &str)
+                              -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("currencyPair", currency_pair);
+        self.private_query("returnOpenOrders", &params)
+    }
+
+    /// Returns your trade history for a given market, specified by the "currencyPair" POST
+    /// parameter.
+    /// You may specify "all" as the currencyPair to receive your trade history for all markets.
+    /// You may optionally specify a range via "start" and/or "end" POST parameters, given in UNIX
+    /// timestamp format;
+    /// if you do not specify a range, it will be limited to one day.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// [{ "globalTradeID": 25129732, "tradeID": "6325758", "date": "2016-04-05 08:08:40",
+    /// "rate": "0.02565498", "amount": "0.10000000", "total": "0.00256549", "fee": "0.00200000",
+    /// "orderNumber": "34225313575", "type": "sell", "category": "exchange" },
+    /// { "globalTradeID": 25129628, "tradeID": "6325741", "date": "2016-04-05 08:07:55",
+    /// "rate": "0.02565499", "amount": "0.10000000", "total": "0.00256549",
+    /// "fee": "0.00200000", "orderNumber": "34225195693", "type": "buy", "category": "exchange" },
+    /// ... ]
+    /// ```
+    ///
+    /// Or, for all markets:
+    ///
+    /// ```ignore
+    /// {"BTC_MAID": [ { "globalTradeID": 29251512, "tradeID": "1385888",
+    /// "date": "2016-05-03 01:29:55", "rate": "0.00014243", "amount": "353.74692925",
+    /// "total": "0.05038417", "fee": "0.00200000", "orderNumber": "12603322113", "type": "buy",
+    /// "category": "settlement" },
+    /// { "globalTradeID": 29251511, "tradeID": "1385887", "date": "2016-05-03 01:29:55",
+    /// "rate": "0.00014111", "amount": "311.24262497", "total": "0.04391944", "fee": "0.00200000",
+    /// "orderNumber": "12603319116", "type": "sell", "category": "marginTrade" }, ... ],
+    /// "BTC_LTC":[ ... ] ... }
+    /// ```
+    pub fn return_private_trade_history(&mut self,
+                                        currency_pair: &str,
+                                        start: &str,
+                                        end: &str)
+                                        -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("currencyPair", currency_pair);
+        params.insert("start", start);
+        params.insert("end", end);
+        self.private_query("returnTradeHistory", &params)
+    }
+
+    /// Returns all trades involving a given order, specified by the "orderNumber" POST parameter.
+    /// If no trades for the order have occurred or you specify an order that does not belong to
+    /// you, you will receive an error.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// [{"globalTradeID": 20825863, "tradeID": 147142, "currencyPair": "BTC_XVC", "type": "buy",
+    /// "rate": "0.00018500", "amount": "455.34206390", "total": "0.08423828", "fee": "0.00200000",
+    /// "date": "2016-03-14 01:04:36"}, ...]
+    /// ```
+    pub fn return_order_trades(&mut self,
+                               order_number: &str)
+                               -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("orderNumber", order_number);
+        self.private_query("returnOrderTrades", &params)
+    }
+
+    /// Places a limit buy order in a given market. Required POST parameters are "currencyPair",
+    /// "rate", and "amount".
+    /// If successful, the method will return the order number.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"orderNumber":31226040,"resultingTrades":[{"amount":"338.8732",
+    /// "date":"2014-10-18 23:03:21", "rate":"0.00000173","total":"0.00058625","tradeID":"16164",
+    /// "type":"buy"}]}
+    /// ```
+    pub fn buy(&mut self,
+               currency_pair: &str,
+               rate: &str,
+               amount: &str)
+               -> Result<Map<String, Value>, error::Error> {
+        // TODO: "fillOrKill", "immediateOrCancel", "postOnly"
+        let mut params = HashMap::new();
+        params.insert("currencyPair", currency_pair);
+        params.insert("rate", rate);
+        params.insert("amount", amount);
+        self.private_query("buy", &params)
+    }
+
+    /// Places a sell order in a given market. Parameters and output are the same as for the buy
+    /// method.
+    pub fn sell(&mut self,
+                currency_pair: &str,
+                rate: &str,
+                amount: &str)
+                -> Result<Map<String, Value>, error::Error> {
+        // TODO: "fillOrKill", "immediateOrCancel", "postOnly"
+        let mut params = HashMap::new();
+        params.insert("currencyPair", currency_pair);
+        params.insert("rate", rate);
+        params.insert("amount", amount);
+        self.private_query("sell", &params)
+    }
+
+    /// Cancels an order you have placed in a given market.
+    /// Required POST parameter is "orderNumber". If successful, the method will return:
+    /// {"success":1}
+    pub fn cancel_order(&mut self, order_number: &str) -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("orderNumber", order_number);
