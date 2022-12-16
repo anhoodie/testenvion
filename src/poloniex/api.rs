@@ -493,3 +493,128 @@ impl PoloniexApi {
     pub fn cancel_order(&mut self, order_number: &str) -> Result<Map<String, Value>, error::Error> {
         let mut params = HashMap::new();
         params.insert("orderNumber", order_number);
+        self.private_query("cancelOrder", &params)
+    }
+
+    /// Cancels an order and places a new one of the same type in a single atomic transaction,
+    /// meaning either both operations will succeed or both will fail.
+    /// Required POST parameters are "orderNumber" and "rate"; you may optionally
+    /// specify "amount" if you wish to change the amount of the new order.
+    /// "postOnly" or "immediateOrCancel" may be specified for exchange orders, but will have no
+    /// effect on margin orders.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"success":1,"orderNumber":"239574176","resultingTrades":{"BTC_BTS":[]}}
+    /// ```
+    pub fn move_order(&mut self,
+                      order_number: &str,
+                      rate: &str)
+                      -> Result<Map<String, Value>, error::Error> {
+        // TODO: add optional parameters
+        let mut params = HashMap::new();
+        params.insert("orderNumber", order_number);
+        params.insert("rate", rate);
+        self.private_query("moveOrder", &params)
+    }
+
+    /// Immediately places a withdrawal for a given currency, with no email confirmation.
+    /// In order to use this method, the withdrawal privilege must be enabled for your API key.
+    /// Required POST parameters are "currency", "amount", and "address".
+    /// For XMR withdrawals, you may optionally specify "paymentId".
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"response":"Withdrew 2398 NXT."}
+    /// ```
+    pub fn withdraw(&mut self,
+                    currency: &str,
+                    amount: &str,
+                    address: &str)
+                    -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("currency", currency);
+        params.insert("amount", amount);
+        params.insert("address", address);
+        self.private_query("withdraw", &params)
+    }
+
+    /// If you are enrolled in the maker-taker fee schedule, returns your current
+    /// trading fees and trailing 30-day volume in BTC. This information is updated once every
+    /// 24 hours.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"makerFee": "0.00140000", "takerFee": "0.00240000", "thirtyDayVolume": "612.00248891",
+    /// "nextTier": "1200.00000000"}
+    /// ```
+    pub fn return_free_info(&mut self) -> Result<Map<String, Value>, error::Error> {
+        let params = HashMap::new();
+        self.private_query("returnFeeInfo", &params)
+    }
+
+    /// Returns your balances sorted by account. You may optionally specify the "account" POST
+    /// parameter if you wish to fetch only the balances of one account. Please note that balances
+    /// in your margin account may not be accessible if you have any open margin positions or
+    /// orders.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"exchange":{"BTC":"1.19042859","BTM":"386.52379392","CHA":"0.50000000",
+    /// "DASH":"120.00000000", "STR":"3205.32958001", "VNL":"9673.22570147"},
+    /// "margin":{"BTC":"3.90015637", "DASH":"250.00238240","XMR":"497.12028113"},
+    /// "lending":{"DASH":"0.01174765","LTC":"11.99936230"}}
+    /// ```
+    pub fn return_available_account_balances(&mut self,
+                                             account: &str)
+                                             -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("account", account);
+        self.private_query("returnAvailableAccountBalances", &params)
+    }
+
+    /// Returns your current tradable balances for each currency in each market for which
+    /// margin trading is enabled. Please note that these balances may vary continually with
+    /// market conditions.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"BTC_DASH":{"BTC":"8.50274777","DASH":"654.05752077"},"BTC_LTC":{"BTC":"8.50274777",
+    /// "LTC":"1214.67825290"},"BTC_XMR":{"BTC":"8.50274777","XMR":"3696.84685650"}}
+    /// ```
+    pub fn return_tradable_balances(&mut self) -> Result<Map<String, Value>, error::Error> {
+        let params = HashMap::new();
+        self.private_query("returnTradableBalances", &params)
+    }
+
+    /// Transfers funds from one account to another (e.g. from your exchange account to your
+    /// margin account). Required POST parameters are "currency", "amount", "fromAccount",
+    /// and "toAccount".
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"success":1,"message":"Transferred 2 BTC from exchange to margin account."}
+    /// ```
+    pub fn transfer_balance(&mut self,
+                            currency: &str,
+                            amount: &str,
+                            from_account: &str,
+                            to_account: &str)
+                            -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("currency", currency);
+        params.insert("amount", amount);
+        params.insert("fromAccount", from_account);
+        params.insert("toAccount", to_account);
+        self.private_query("transferBalance", &params)
+    }
+
+
+    /// Returns a summary of your entire margin account. This is the same information you will
+    /// find in the Margin Account section of the Margin Trading page, under the Markets list.
