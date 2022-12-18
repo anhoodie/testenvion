@@ -618,3 +618,135 @@ impl PoloniexApi {
 
     /// Returns a summary of your entire margin account. This is the same information you will
     /// find in the Margin Account section of the Margin Trading page, under the Markets list.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"totalValue": "0.00346561","pl": "-0.00001220","lendingFees": "0.00000000",
+    /// "netValue": "0.00345341","totalBorrowedValue": "0.00123220","currentMargin": "2.80263755"}
+    /// ```
+    pub fn return_margin_account_summary(&mut self) -> Result<Map<String, Value>, error::Error> {
+        let params = HashMap::new();
+        self.private_query("returnMarginAccountSummary", &params)
+    }
+
+    /// Places a margin buy order in a given market. Required POST parameters are
+    /// "currencyPair", "rate", and "amount". You may optionally specify a maximum lending
+    /// rate using the "lendingRate" parameter. If successful, the method will return the order
+    /// number and any trades immediately resulting from your order.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"success":1,"message":"Margin order placed.","orderNumber":"154407998",
+    /// "resultingTrades":{"BTC_DASH":[{"amount":"1.00000000","date":"2015-05-10 22:47:05",
+    /// "rate":"0.01383692","total":"0.01383692","tradeID":"1213556","type":"buy"}]}}
+    /// ```
+    pub fn margin_buy(&mut self,
+                      currency_pair: &str,
+                      rate: &str,
+                      amount: &str,
+                      lending_rate: &str)
+                      -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("currencyPair", currency_pair);
+        params.insert("rate", rate);
+        params.insert("amount", amount);
+        params.insert("lendingRate", lending_rate);
+        self.private_query("marginBuy", &params)
+    }
+
+    /// Places a margin sell order in a given market. Required POST parameters are
+    /// "currencyPair", "rate", and "amount". You may optionally specify a maximum lending
+    /// rate using the "lendingRate" parameter. If successful, the method will return the order
+    /// number and any trades immediately resulting from your order.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"success":1,"message":"Margin order placed.","orderNumber":"154407998",
+    /// "resultingTrades":{"BTC_DASH":[{"amount":"1.00000000","date":"2015-05-10 22:47:05",
+    /// "rate":"0.01383692","total":"0.01383692","tradeID":"1213556","type":"sell"}]}}
+    /// ```
+    pub fn margin_sell(&mut self,
+                       currency_pair: &str,
+                       rate: &str,
+                       amount: &str,
+                       lending_rate: &str)
+                       -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("currencyPair", currency_pair);
+        params.insert("rate", rate);
+        params.insert("amount", amount);
+        params.insert("lendingRate", lending_rate);
+        self.private_query("marginSell", &params)
+    }
+
+    /// Returns information about your margin position in a given market, specified by the
+    /// "currencyPair" POST parameter. You may set "currencyPair" to "all" if you wish to fetch all
+    /// of your margin positions at once. If you have no margin position in the specified market,
+    /// "type" will be set to "none". "liquidationPrice" is an estimate, and does not necessarily
+    /// represent the price at which an actual forced liquidation will occur. If you have no
+    /// liquidation price, the value will be -1.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"amount":"40.94717831","total":"-0.09671314","basePrice":"0.00236190",
+    /// "liquidationPrice":-1,"pl":"-0.00058655", "lendingFees":"-0.00000038","type":"long"}
+    /// ```
+    pub fn get_margin_position(&mut self,
+                               currency_pair: &str)
+                               -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("currencyPair", currency_pair);
+        self.private_query("getMarginPosition", &params)
+    }
+
+    /// Closes your margin position in a given market (specified by the "currencyPair" POST
+    /// parameter) using a market order. This call will also return success if you do not have an
+    /// open position in the specified market.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"success":1,"message":"Successfully closed margin position.",
+    /// "resultingTrades":{"BTC_XMR":[{"amount":"7.09215901","date":"2015-05-10 22:38:49",
+    /// "rate":"0.00235337","total":"0.01669047","tradeID":"1213346","type":"sell"},
+    /// {"amount":"24.00289920","date":"2015-05-10 22:38:49","rate":"0.00235321",
+    /// "total":"0.05648386","tradeID":"1213347","type":"sell"}]}}
+    /// ```
+    pub fn close_margin_position(&mut self,
+                                 currency_pair: &str)
+                                 -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("currencyPair", currency_pair);
+        self.private_query("closeMarginPosition", &params)
+    }
+
+    /// Creates a loan offer for a given currency. Required POST parameters are "currency",
+    /// "amount", "duration", "autoRenew" (0 or 1), and "lendingRate".
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"success":1,"message":"Loan order placed.","orderID":10590}
+    /// ```
+    pub fn create_loan_offer(&mut self,
+                             currency: &str,
+                             amount: &str,
+                             duration: &str,
+                             auto_renew: &str,
+                             lending_rate: &str)
+                             -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("currency", currency);
+        params.insert("amount", amount);
+        params.insert("duration", duration);
+        params.insert("autoRenew", auto_renew);
+        params.insert("lendingRate", lending_rate);
+        self.private_query("createLoanOffer", &params)
+    }
+
+    /// Cancels a loan offer specified by the "orderNumber" POST parameter.
+    ///
