@@ -29,3 +29,24 @@ impl ExchangeApi for PoloniexApi {
         let ask = result[*pair_name]["lowestAsk"].as_str().unwrap().parse::<f64>().unwrap();
         let bid = result[*pair_name]["highestBid"].as_str().unwrap().parse::<f64>().unwrap();
         let vol = result[*pair_name]["quoteVolume"].as_str().unwrap().parse::<f64>().unwrap();
+
+        Ok(Ticker {
+            timestamp: helpers::get_unix_timestamp_ms(),
+            pair: pair,
+            last_trade_price: price,
+            lowest_ask: ask,
+            highest_bid: bid,
+            volume: Some(vol),
+        })
+
+    }
+    fn return_trade_history(&mut self, _: Pair) -> Option<Map<String, Value>> {
+        unimplemented!();
+    }
+    fn return_order_book(&mut self, _: Pair) -> Option<Map<String, Value>> {
+        unimplemented!();
+    }
+    fn return_balances(&mut self, _: Pair) -> Option<Map<String, Value>> {
+        unimplemented!();
+    }
+}
