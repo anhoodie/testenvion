@@ -750,3 +750,86 @@ impl PoloniexApi {
 
     /// Cancels a loan offer specified by the "orderNumber" POST parameter.
     ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"success":1,"message":"Loan offer canceled."}
+    /// ```
+    pub fn cancel_loan_offer(&mut self,
+                             order_number: &str)
+                             -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("orderNumber", order_number);
+        self.private_query("cancelLoanOffer", &params)
+    }
+
+    /// Returns your open loan offers for each currency.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"BTC":[{"id":10595,"rate":"0.00020000","amount":"3.00000000","duration":2,"autoRenew":1,
+    /// "date":"2015-05-10 23:33:50"}],"LTC":[{"id":10598,"rate":"0.00002100",
+    /// "amount":"10.00000000","duration":2,"autoRenew":1,"date":"2015-05-10 23:34:35"}]}
+    /// ```
+    pub fn return_open_loan_offers(&mut self) -> Result<Map<String, Value>, error::Error> {
+        let params = HashMap::new();
+        self.private_query("returnOpenLoanOffers", &params)
+    }
+
+    /// Returns your active loans for each currency.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"provided":[{"id":75073,"currency":"LTC","rate":"0.00020000","amount":"0.72234880",
+    /// "range":2,"autoRenew":0,"date":"2015-05-10 23:45:05","fees":"0.00006000"},
+    /// {"id":74961,"currency":"LTC","rate":"0.00002000","amount":"4.43860711","range":2,
+    /// "autoRenew":0,"date":"2015-05-10 23:45:05","fees":"0.00006000"}],
+    /// "used":[{"id":75238,"currency":"BTC","rate":"0.00020000","amount":"0.04843834","range":2,
+    /// "date":"2015-05-10 23:51:12","fees":"-0.00000001"}]}
+    /// ```
+    pub fn return_active_loans(&mut self) -> Result<Map<String, Value>, error::Error> {
+        let params = HashMap::new();
+        self.private_query("returnActiveLoans", &params)
+    }
+
+    /// Returns your lending history within a time range specified by the "start" and "end" POST
+    /// parameters as UNIX timestamps. "limit" may also be specified to limit the number of rows
+    /// returned.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// [{ "id": 175589553, "currency": "BTC", "rate": "0.00057400", "amount": "0.04374404",
+    /// "duration": "0.47610000", "interest": "0.00001196", "fee": "-0.00000179",
+    /// "earned": "0.00001017", "open": "2016-09-28 06:47:26", "close": "2016-09-28 18:13:03" }]
+    /// ```
+    pub fn return_lending_history(&mut self,
+                                  start: &str,
+                                  end: &str,
+                                  limit: &str)
+                                  -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("start", start);
+        params.insert("end", end);
+        params.insert("limit", limit);
+        self.private_query("returnLendingHistory", &params)
+    }
+
+    /// Toggles the autoRenew setting on an active loan, specified by the "orderNumber" POST
+    /// parameter. If successful, "message" will indicate the new autoRenew setting.
+    ///
+    /// Sample output:
+    ///
+    /// ```ignore
+    /// {"success":1,"message":0}
+    /// ```
+    pub fn toggle_auto_renew(&mut self,
+                             order_number: &str)
+                             -> Result<Map<String, Value>, error::Error> {
+        let mut params = HashMap::new();
+        params.insert("orderNumber", order_number);
+        self.private_query("toggleAutoRenew", &params)
+    }
+}
