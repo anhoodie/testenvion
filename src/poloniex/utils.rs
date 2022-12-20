@@ -14,3 +14,8 @@ lazy_static! {
         m.insert(BTC_ZEC, "BTC_ZEC");
         m
     };
+}
+
+/// Return the name associated to pair used by Poloniex
+/// If the Pair is not supported, None is returned.
+pub fn get_pair
