@@ -9,4 +9,8 @@ use pair::Pair::*;
 
 lazy_static! {
     static ref PAIRS_STRING: BidirMap<Pair, &'static str> = {
-        let mut m = Bi
+        let mut m = BidirMap::new();
+        m.insert(BTC_ETH, "BTC_ETH");
+        m.insert(BTC_ZEC, "BTC_ZEC");
+        m
+    };
