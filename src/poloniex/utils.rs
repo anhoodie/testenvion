@@ -18,4 +18,8 @@ lazy_static! {
 
 /// Return the name associated to pair used by Poloniex
 /// If the Pair is not supported, None is returned.
-pub fn get_pair
+pub fn get_pair_string(pair: &Pair) -> Option<&&str> {
+    PAIRS_STRING.get_by_first(pair)
+}
+
+/// Return the Pair enum associated to
