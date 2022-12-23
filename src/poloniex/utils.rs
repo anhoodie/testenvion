@@ -24,4 +24,8 @@ pub fn get_pair_string(pair: &Pair) -> Option<&&str> {
 
 /// Return the Pair enum associated to the string used by Poloniex
 /// If the Pair is not supported, None is returned.
-pub fn get_pair_enum(pair: &str) -> Option<&Pair>
+pub fn get_pair_enum(pair: &str) -> Option<&Pair> {
+    PAIRS_STRING.get_by_second(&pair)
+}
+
+pub fn deserialize_json(json_string: String) -> Result<Map<String, Value>, error
