@@ -28,4 +28,7 @@ pub fn get_pair_enum(pair: &str) -> Option<&Pair> {
     PAIRS_STRING.get_by_second(&pair)
 }
 
-pub fn deserialize_json(json_string: String) -> Result<Map<String, Value>, error
+pub fn deserialize_json(json_string: String) -> Result<Map<String, Value>, error::Error> {
+    let data: Value = match serde_json::from_str(&json_string) {
+        Ok(data) => data,
+        Err(_) => re
