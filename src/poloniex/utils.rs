@@ -31,4 +31,8 @@ pub fn get_pair_enum(pair: &str) -> Option<&Pair> {
 pub fn deserialize_json(json_string: String) -> Result<Map<String, Value>, error::Error> {
     let data: Value = match serde_json::from_str(&json_string) {
         Ok(data) => data,
-        Err(_) => re
+        Err(_) => return Err(error::Error::BadParse),
+    };
+
+    match data.as_object() {
+        Some(value) => Ok(value.clone()
