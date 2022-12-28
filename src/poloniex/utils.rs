@@ -43,4 +43,6 @@ pub fn deserialize_json(json_string: String) -> Result<Map<String, Value>, error
 
 /// If error array is null, return the result (encoded in a json object)
 /// else return the error string found in array
-pub fn parse_result(response: Map<String, Value>) -> Resu
+pub fn parse_result(response: Map<String, Value>) -> Result<Map<String, Value>, error::Error> {
+    let error_msg = match response.get("error") {
+        Some(error) => error.as_str().unwra
