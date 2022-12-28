@@ -35,4 +35,11 @@ pub fn deserialize_json(json_string: String) -> Result<Map<String, Value>, error
     };
 
     match data.as_object() {
-        Some(value) => Ok(value.clone()
+        Some(value) => Ok(value.clone()),
+        None => Err(error::Error::BadParse),
+    }
+}
+
+
+/// If error array is null, return the result (encoded in a json object)
+/// else 
