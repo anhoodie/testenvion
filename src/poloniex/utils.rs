@@ -42,4 +42,5 @@ pub fn deserialize_json(json_string: String) -> Result<Map<String, Value>, error
 
 
 /// If error array is null, return the result (encoded in a json object)
-/// else 
+/// else return the error string found in array
+pub fn parse_result(response: Map<String, Value>) -> Resu
