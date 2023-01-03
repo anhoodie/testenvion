@@ -51,4 +51,6 @@ pub fn parse_result(response: Map<String, Value>) -> Result<Map<String, Value>, 
 
     match error_msg.as_ref() {
         "Invalid command." => Err(error::Error::InvalidArguments),
-        other => Err(error::Error::ExchangeSpecificError(other.to_string
+        other => Err(error::Error::ExchangeSpecificError(other.to_string())),
+    }
+}
