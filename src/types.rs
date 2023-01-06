@@ -13,4 +13,7 @@ pub struct Ticker {
     pub pair: Pair,
     /// Last trade price found in the history
     pub last_trade_price: Price,
-    /// Lowe
+    /// Lowest ask price found in Orderbook
+    pub lowest_ask: Price,
+    /// Highest bid price found in Orderbook
+    pub h
