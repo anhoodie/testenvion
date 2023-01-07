@@ -16,4 +16,6 @@ pub struct Ticker {
     /// Lowest ask price found in Orderbook
     pub lowest_ask: Price,
     /// Highest bid price found in Orderbook
-    pub h
+    pub highest_bid: Price,
+    // Bittrex does not support Volume for ticker so volume could be None
+    /// Last 24 hours volum
