@@ -18,4 +18,11 @@ pub struct Ticker {
     /// Highest bid price found in Orderbook
     pub highest_bid: Price,
     // Bittrex does not support Volume for ticker so volume could be None
-    /// Last 24 hours volum
+    /// Last 24 hours volume (quote-volume)
+    pub volume: Option<Volume>,
+}
+
+
+/*
+pub struct Orderbook {
+    timestamp: i
