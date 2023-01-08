@@ -25,4 +25,10 @@ pub struct Ticker {
 
 /*
 pub struct Orderbook {
-    timestamp: i
+    timestamp: i64,
+    ask_offers: Vec<Price, Volume>,
+    bid_offers: Vec<Price, Volume>,
+}
+
+impl Orderbook {
+    pub fn get_timestamp(&self
