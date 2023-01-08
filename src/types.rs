@@ -39,4 +39,8 @@ impl Orderbook {
         self.ask_offers
     }
 
-  
+    pub fn get_bid_offers(&self) -> Vec<Price, Volume> {
+        self.bid_offers
+    }
+}
+*/
