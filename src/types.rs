@@ -31,4 +31,12 @@ pub struct Orderbook {
 }
 
 impl Orderbook {
-    pub fn get_timestamp(&self
+    pub fn get_timestamp(&self) -> i64 {
+        self.timestamp
+    }
+
+    pub fn get_ask_offers(&self) -> Vec<Price, Volume> {
+        self.ask_offers
+    }
+
+  
