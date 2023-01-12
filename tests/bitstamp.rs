@@ -9,4 +9,7 @@ mod bitstamp_tests {
 
     use std::collections::HashMap;
 
- 
+    #[test]
+    fn build_url_should_return_the_a_url() {
+        assert_eq!(utils::build_url("ticker", "btcusd"),
+              
