@@ -15,4 +15,6 @@ mod bitstamp_tests {
                    "https://www.bitstamp.net/api/v2/ticker/btcusd/");
     }
     #[test]
-    fn build_url_should_return_the_url_for_transactio
+    fn build_url_should_return_the_url_for_transactions_for_btc_usd() {
+        assert_eq!(utils::build_url("transactions", "btcusd"),
+                   "https://www.bitstamp.net
