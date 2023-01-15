@@ -12,4 +12,7 @@ mod bitstamp_tests {
     #[test]
     fn build_url_should_return_the_a_url() {
         assert_eq!(utils::build_url("ticker", "btcusd"),
-              
+                   "https://www.bitstamp.net/api/v2/ticker/btcusd/");
+    }
+    #[test]
+    fn build_url_should_return_the_url_for_transactio
