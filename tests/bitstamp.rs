@@ -25,4 +25,10 @@ mod bitstamp_tests {
         let params = HashMap::new();
         let mut api = BitstampApi::new(&params);
         let result = api.ticker(Pair::BTC_USD);
-        assert_eq!(result.i
+        assert_eq!(result.is_ok(), true);
+    }
+
+    #[test]
+    fn ticker_should_have_the_correct_last() {
+        let params = HashMap::new();
+      
