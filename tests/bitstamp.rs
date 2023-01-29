@@ -23,3 +23,6 @@ mod bitstamp_tests {
     #[test]
     fn can_get_real_bitstamp_tick() {
         let params = HashMap::new();
+        let mut api = BitstampApi::new(&params);
+        let result = api.ticker(Pair::BTC_USD);
+        assert_eq!(result.i
