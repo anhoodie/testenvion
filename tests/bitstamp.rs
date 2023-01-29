@@ -17,4 +17,9 @@ mod bitstamp_tests {
     #[test]
     fn build_url_should_return_the_url_for_transactions_for_btc_usd() {
         assert_eq!(utils::build_url("transactions", "btcusd"),
-                   "https://www.bitstamp.net
+                   "https://www.bitstamp.net/api/v2/transactions/btcusd/");
+    }
+
+    #[test]
+    fn can_get_real_bitstamp_tick() {
+        let params = HashMap::new();
