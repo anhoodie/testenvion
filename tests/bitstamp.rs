@@ -58,4 +58,6 @@ mod bitstamp_tests {
     }
 
     #[test]
-    fn should_return_an_o
+    fn should_return_an_order_book() {
+        let params = HashMap::new();
+        let mut api = BitstampApi::new(&params);
