@@ -53,4 +53,9 @@ mod bitstamp_tests {
     fn ticker_should_have_the_correct_volume() {
         let params = HashMap::new();
         let mut api = BitstampApi::new(&params);
-        let result = api.ticker(Pai
+        let result = api.ticker(Pair::BTC_USD);
+        assert!(result.unwrap().volume.unwrap() != 0.0);
+    }
+
+    #[test]
+    fn should_return_an_o
