@@ -61,3 +61,9 @@ mod bitstamp_tests {
     fn should_return_an_order_book() {
         let params = HashMap::new();
         let mut api = BitstampApi::new(&params);
+        let result = api.return_order_book(Pair::BTC_USD);
+        assert_eq!(result.is_ok(), true);
+    }
+
+    #[test]
+    fn order_book_
