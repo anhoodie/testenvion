@@ -66,4 +66,7 @@ mod bitstamp_tests {
     }
 
     #[test]
-    fn order_book_
+    fn order_book_should_have_a_timestamp() {
+        let params = HashMap::new();
+        let mut api = BitstampApi::new(&params);
+   
