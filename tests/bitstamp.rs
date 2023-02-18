@@ -69,4 +69,5 @@ mod bitstamp_tests {
     fn order_book_should_have_a_timestamp() {
         let params = HashMap::new();
         let mut api = BitstampApi::new(&params);
-   
+        let result = api.return_order_book(Pair::BTC_USD);
+        assert!(result.unwrap().contains_key("timestamp"));
