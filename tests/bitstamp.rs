@@ -84,4 +84,10 @@ mod bitstamp_tests {
         let params = HashMap::new();
         let mut api = BitstampApi::new(&params);
         let result = api.return_order_book(Pair::BTC_USD);
-        assert!(result.unwrap().contains_k
+        assert!(result.unwrap().contains_key("bids"));
+    }
+
+    #[test]
+    fn order_book_should_have_asks_for_btcusd() {
+        let params = HashMap::new();
+   
