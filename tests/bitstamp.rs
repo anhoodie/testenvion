@@ -97,4 +97,9 @@ mod bitstamp_tests {
     fn order_book_should_have_asks_for_btceur() {
         let params = HashMap::new();
         let mut api = BitstampApi::new(&params);
-        assert!(api.return_order_book(Pair::BTC_USD).unwrap(
+        assert!(api.return_order_book(Pair::BTC_USD).unwrap().contains_key("asks"));
+    }
+
+    #[test]
+    fn should_create_a_fixed_nonce_when_requested() {
+        assert_eq!(utils::
