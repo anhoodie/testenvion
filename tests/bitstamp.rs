@@ -102,4 +102,8 @@ mod bitstamp_tests {
 
     #[test]
     fn should_create_a_fixed_nonce_when_requested() {
-        assert_eq!(utils::
+        assert_eq!(utils::generate_nonce(Some("1".to_string())), "1");
+    }
+    #[test]
+    fn should_create_a_nonce_bigger_than_2017() {
+        ass
