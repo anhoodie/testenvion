@@ -106,4 +106,7 @@ mod bitstamp_tests {
     }
     #[test]
     fn should_create_a_nonce_bigger_than_2017() {
-        ass
+        assert!(utils::generate_nonce(None).parse::<i64>().unwrap() > 1483228800);
+    }
+    #[test]
+    fn should_create_a_correct
