@@ -109,4 +109,7 @@ mod bitstamp_tests {
         assert!(utils::generate_nonce(None).parse::<i64>().unwrap() > 1483228800);
     }
     #[test]
-    fn should_create_a_correct
+    fn should_create_a_correct_signature() {
+        let nonce = "1483228800".to_string();
+        let customer_id = "123456".to_string();
+        let api_key = "1
