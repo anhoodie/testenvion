@@ -114,4 +114,5 @@ mod bitstamp_tests {
         let customer_id = "123456".to_string();
         let api_key = "1234567890ABCDEF1234567890ABCDEF".to_string();
         let api_secret = "1234567890ABCDEF1234567890ABCDEF".to_string();
-        l
+        let expected_signature = "7D7C4168D49CBC2620A45EF00EAA228C1287561F1C1F94172272E1231A8ADF6B"
+            .to_st
