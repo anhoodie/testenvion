@@ -112,4 +112,6 @@ mod bitstamp_tests {
     fn should_create_a_correct_signature() {
         let nonce = "1483228800".to_string();
         let customer_id = "123456".to_string();
-        let api_key = "1
+        let api_key = "1234567890ABCDEF1234567890ABCDEF".to_string();
+        let api_secret = "1234567890ABCDEF1234567890ABCDEF".to_string();
+        l
