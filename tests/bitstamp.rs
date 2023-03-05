@@ -115,4 +115,7 @@ mod bitstamp_tests {
         let api_key = "1234567890ABCDEF1234567890ABCDEF".to_string();
         let api_secret = "1234567890ABCDEF1234567890ABCDEF".to_string();
         let expected_signature = "7D7C4168D49CBC2620A45EF00EAA228C1287561F1C1F94172272E1231A8ADF6B"
-            .to_st
+            .to_string();
+        assert_eq!(utils::build_signature(nonce, customer_id, api_key, api_secret),
+                   expected_signature);
+    
