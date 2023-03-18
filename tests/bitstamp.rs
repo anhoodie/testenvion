@@ -123,4 +123,7 @@ mod bitstamp_tests {
     #[test]
     fn should_return_the_trade_history_for_btc_usd() {
         let params = HashMap::new();
-       
+        let mut api = BitstampApi::new(&params);
+        let result = api.return_trade_history(Pair::BTC_USD);
+
+        assert_eq!(re
