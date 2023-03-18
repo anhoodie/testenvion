@@ -118,4 +118,9 @@ mod bitstamp_tests {
             .to_string();
         assert_eq!(utils::build_signature(nonce, customer_id, api_key, api_secret),
                    expected_signature);
-    
+    }
+
+    #[test]
+    fn should_return_the_trade_history_for_btc_usd() {
+        let params = HashMap::new();
+       
