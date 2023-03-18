@@ -126,4 +126,8 @@ mod bitstamp_tests {
         let mut api = BitstampApi::new(&params);
         let result = api.return_trade_history(Pair::BTC_USD);
 
-        assert_eq!(re
+        assert_eq!(result.is_ok(), false);
+    }
+
+    // IMPORTANT: Real keys are needed in order to retrieve the balance
+    #[test
