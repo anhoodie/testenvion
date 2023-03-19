@@ -130,4 +130,7 @@ mod bitstamp_tests {
     }
 
     // IMPORTANT: Real keys are needed in order to retrieve the balance
-    #[test
+    #[test]
+    #[cfg_attr(not(feature = "bitstamp_private_tests"), ignore)]
+    fn balance_should_have_usd_btc_fee() {
+        us
