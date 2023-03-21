@@ -133,4 +133,6 @@ mod bitstamp_tests {
     #[test]
     #[cfg_attr(not(feature = "bitstamp_private_tests"), ignore)]
     fn balance_should_have_usd_btc_fee() {
-        us
+        use std::path::PathBuf;
+        let path = PathBuf::from("./keys_real.json");
+        let mut api = BitstampApi::new_from_fi
