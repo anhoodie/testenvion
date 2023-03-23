@@ -135,4 +135,6 @@ mod bitstamp_tests {
     fn balance_should_have_usd_btc_fee() {
         use std::path::PathBuf;
         let path = PathBuf::from("./keys_real.json");
-        let mut api = BitstampApi::new_from_fi
+        let mut api = BitstampApi::new_from_file("account_bitstamp", path);
+        let result = api.return_balances(Pair::BTC_USD).unwrap();
+        let result_looking_for_usd = re
