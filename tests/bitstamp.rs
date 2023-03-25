@@ -137,4 +137,8 @@ mod bitstamp_tests {
         let path = PathBuf::from("./keys_real.json");
         let mut api = BitstampApi::new_from_file("account_bitstamp", path);
         let result = api.return_balances(Pair::BTC_USD).unwrap();
-        let result_looking_for_usd = re
+        let result_looking_for_usd = result.clone();
+        let result_looking_for_btc = result.clone();
+        let result_looking_for_fee = result.clone();
+
+ 
