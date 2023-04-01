@@ -142,4 +142,7 @@ mod bitstamp_tests {
         let result_looking_for_fee = result.clone();
 
         assert!(result_looking_for_usd.contains_key("usd_balance"));
-        assert!(result_looking_for_btc.contains_key("btc_balance
+        assert!(result_looking_for_btc.contains_key("btc_balance"));
+        assert!(result_looking_for_fee.contains_key("fee"));
+    }
+}
